@@ -24,6 +24,7 @@
     const img = node('img');
     img.src = './assets/covers/' + (covers[course.id] || (course.subject === '历史' ? 'history' : 'paper')) + '.svg';
     img.alt = '';
+    img.loading = 'lazy';
     cover.append(img, node('span','cover-index','No. ' + String(courses.indexOf(course)+1).padStart(2,'0')));
     const body = node('div','card-body');
     const tags = node('div','tagline');
@@ -155,7 +156,7 @@
   // Index each lesson's content once. A search always covers both subjects.
   const searchable = courses.map(course => {
     const text = [course.title, course.subject, gradeName(course.grade), course.grade + '年级',
-      course.term, unitName(course), course.genre, course.type || '课件改编', course.summary, course.warmup,
+      course.term, unitName(course), ...(course.sessions || []).flatMap(item => [item.label,item.text]), course.genre, course.type || '课件改编', course.summary, course.warmup,
       ...course.focus.flatMap(item => [item.label, item.text]), course.activity.prompt,
       ...course.activity.choices.flatMap(item => [item.label, item.text]),
       ...course.quiz.flatMap(item => [item.question, ...item.options, item.explanation])].join(' ').toLowerCase();
