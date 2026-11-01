@@ -26,7 +26,22 @@
   const gradeNames = '一二三四五六七八九';
   const grade = gradeNames[lesson.grade - 1] + '年级';
   document.title = lesson.title + ' · 锦安老师的公开课';
-  byId('metadata').textContent = [grade, lesson.subject, lesson.term].join('　/　');
+  const path = new URLSearchParams({subject: lesson.subject});
+  const levels = [
+    {label: lesson.subject},
+    {label: grade, params: {grade: lesson.grade}},
+    {label: lesson.unit || lesson.term, params: {term: lesson.term, unit: lesson.unit || '待编目'}}
+  ];
+  for (const level of levels) {
+    for (const [key, value] of Object.entries(level.params || {})) path.set(key, value);
+    const link = node('a', level.label);
+    link.href = './index.html#library?' + path.toString();
+    if (byId('metadata').childElementCount) byId('metadata').append(' / ');
+    byId('metadata').append(link);
+  }
+  for (const link of document.querySelectorAll('[data-return-unit]')) {
+    link.href = './index.html#library?' + path.toString();
+  }
   byId('title').textContent = lesson.title;
   byId('summary').textContent = lesson.summary;
   byId('genre').textContent = lesson.genre;

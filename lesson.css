@@ -35,6 +35,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .cover-line [lang] { font-family: Georgia, serif; font-size: .72rem; letter-spacing: .2em; }
 .cover-text { max-width: 850px; padding: 30px 0 29px; }
 .grade-label { font-size: .82rem; font-weight: 600; letter-spacing: .1em; margin: 0 0 .8rem; }
+.grade-label a { color: inherit; text-decoration-color: currentColor; }
 h1, h2, h3, legend { font-family: var(--serif); color: var(--ink); }
 h1 { margin: 0; font-size: clamp(2.25rem, 4.8vw, 3.9rem); line-height: 1.24; letter-spacing: .02em; }
 .cover h1 { color: inherit; }
