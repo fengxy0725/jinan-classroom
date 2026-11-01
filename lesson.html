@@ -15,6 +15,7 @@
   <script defer src="./lessons/grade9.js"></script>
   <script defer src="./lessons/junior-history.js"></script>
   <script defer src="./lesson.js"></script>
+  <script defer src="./classroom-service.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#content">跳到讲义正文</a>
@@ -47,6 +48,7 @@
             <li><a href="#reading"><span>02</span> 一起读</a></li>
             <li><a href="#explore"><span>03</span> 点一点</a></li>
             <li><a href="#practice"><span>04</span> 试一试</a></li>
+            <li><a href="#recall"><span>05</span> 回忆卡</a></li>
           </ol>
         </nav>
         <div class="body-copy">
@@ -56,6 +58,10 @@
           </section>
           <section id="reading">
             <div class="section-head"><span>02</span><h2>一起读</h2></div>
+            <details id="sessions" class="session-guide" hidden>
+              <summary>分课时学习重点</summary>
+              <ol id="session-list"></ol>
+            </details>
             <div id="focus"></div>
           </section>
           <section id="explore">
@@ -70,9 +76,32 @@
             <div id="questions"></div>
             <p class="score" id="score" aria-live="polite"></p>
           </section>
+          <section id="recall" aria-labelledby="recall-title">
+            <div class="section-head"><span>05</span><h2 id="recall-title">合上讲义 · 回忆卡</h2></div>
+            <p>先不看讲义。读卡上的提示，用自己的话讲给同桌听，也可以写在这里。翻开后，对照一下你记住了什么。</p>
+            <div class="recall-panel">
+              <div class="recall-bar"><span id="recall-progress" role="status"></span><button type="button" id="recall-reset" class="recall-reset">从头练习</button></div>
+              <h3 id="recall-prompt" tabindex="-1"></h3>
+              <div id="recall-card">
+                <label for="recall-draft">我的解释（可以只口述）</label>
+                <textarea id="recall-draft" autocomplete="off" rows="3" placeholder="我记得……课文里的依据是……"></textarea>
+                <button type="button" id="recall-flip" class="recall-primary" aria-controls="recall-back" aria-expanded="false">翻开讲解</button>
+                <div id="recall-back" class="recall-back" hidden>
+                  <h4 tabindex="-1" id="recall-back-title">讲义里的解释</h4>
+                  <p id="recall-explanation"></p>
+                  <div class="recall-actions" role="group" aria-label="自评这张卡">
+                    <button type="button" id="recall-mastered" class="recall-primary">已掌握</button>
+                    <button type="button" id="recall-again" class="recall-secondary">再练一次</button>
+                  </div>
+                </div>
+              </div>
+              <p class="recall-note">草稿和自评进度仅在当前页面保留。</p>
+            </div>
+          </section>
           <footer class="credits">
             <h2>本课来源</h2>
             <p id="source"></p>
+            <ul id="source-list" hidden></ul>
             <p id="credit" hidden></p>
             <p id="reference" hidden></p>
             <a class="back-to-library" href="./index.html#library" data-return-unit>返回本单元 <span aria-hidden="true">→</span></a>
@@ -87,6 +116,6 @@
       <a class="back-to-library" href="./index.html#library">返回课程目录 <span aria-hidden="true">→</span></a>
     </div>
   </main>
-  <footer class="site-footer"><span>锦安老师的公开课</span><span>语文 · 历史</span></footer>
+  <footer class="site-footer"><span>锦安老师的公开课</span><span>本课堂记录访问时间和浏览页面</span><span>语文 · 历史</span></footer>
 </body>
 </html>

@@ -47,6 +47,14 @@
   byId('genre').textContent = lesson.genre;
   byId('type').textContent = lesson.type || '课件改编';
   byId('warmup-text').textContent = lesson.warmup;
+  if (lesson.sessions?.length) {
+    for (const session of lesson.sessions) {
+      const row = node('li');
+      row.append(node('strong', session.label), node('p', session.text));
+      byId('session-list').append(row);
+    }
+    byId('sessions').hidden = false;
+  }
   for (const item of lesson.focus) {
     const block = node('div', null, 'reading-block');
     block.append(node('h3', item.label), node('p', item.text));
@@ -124,7 +132,59 @@
   });
   updateScore();
 
-  byId('source').textContent = lesson.credit ? '改编自课件《' + lesson.source + '》' : lesson.source;
+  const recallDraft = byId('recall-draft');
+  const recallBack = byId('recall-back');
+  let queue = lesson.focus.slice();
+
+  function showRecallCard(message = '') {
+    const total = lesson.focus.length;
+    const current = queue[0];
+    const progress = '已掌握 ' + (total - queue.length) + ' / ' + total + ' 张';
+    byId('recall-progress').textContent = message ? message + '　' + progress : progress;
+    byId('recall-prompt').textContent = current ? current.label : '这一轮完成了！';
+    byId('recall-card').hidden = !current;
+    recallDraft.value = '';
+    recallDraft.readOnly = false;
+    recallBack.hidden = true;
+    byId('recall-flip').hidden = false;
+    byId('recall-flip').setAttribute('aria-expanded', 'false');
+    byId('recall-explanation').textContent = '';
+  }
+
+  byId('recall-flip').addEventListener('click', () => {
+    if (!queue.length) return;
+    byId('recall-explanation').textContent = queue[0].text;
+    recallDraft.readOnly = true;
+    byId('recall-flip').setAttribute('aria-expanded', 'true');
+    byId('recall-flip').hidden = true;
+    recallBack.hidden = false;
+    byId('recall-back-title').focus();
+  });
+
+  function rateCard(again) {
+    if (recallBack.hidden || !queue.length) return;
+    const current = queue.shift();
+    if (again) queue.push(current);
+    showRecallCard(again ? '已放回队尾' : '');
+    byId('recall-prompt').focus();
+  }
+  byId('recall-mastered').addEventListener('click', () => rateCard(false));
+  byId('recall-again').addEventListener('click', () => rateCard(true));
+  byId('recall-reset').addEventListener('click', () => {
+    queue = lesson.focus.slice();
+    showRecallCard('已重新开始');
+    byId('recall-prompt').focus();
+  });
+  showRecallCard();
+
+  if (lesson.sources?.length) {
+    byId('source').textContent = '本课依据以下课件改编。';
+    const sourceList = byId('source-list');
+    for (const source of lesson.sources) sourceList.append(node('li', source));
+    sourceList.hidden = false;
+  } else {
+    byId('source').textContent = lesson.credit ? '改编自课件《' + lesson.source + '》' : lesson.source;
+  }
   if (lesson.credit) {
     byId('credit').textContent = lesson.credit;
     byId('credit').hidden = false;
