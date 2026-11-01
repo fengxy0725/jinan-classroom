@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <pattern id="grain" width="41" height="37" patternUnits="userSpaceOnUse">
+      <path d="m3 5 3-1m22 15 2 .5m8 12 2-.4m-27-4 1-.3" stroke="#e7e7d6" opacity=".24" stroke-width=".8"/>
+    </pattern>
+    <g id="leaves" fill="currentColor">
+      <path d="M0 0Q-9-16-30-25-19-8 0 0Zm1-1Q4-23-2-37-6-17 1-1ZM0 0q17-8 30-7Q19 2 0 0ZM-1 1q18 9 27 22Q8 15-1 1ZM-2 0q-9 8-28 9Q-20 2-2 0Z"/>
+    </g>
+    <g id="bamboo">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <path d="M0 188Q11 100 1 16T-23-110" stroke-width="6"/>
+        <path d="M4 82q-14-30-46-47m41-49q14-34 45-57m-52 19q-18-31-47-48m64 161q33-42 73-52" stroke-width="2.2"/>
+        <path d="m-2 84 10-.8m-11-43 9-1m-9-45 9 1m-17-48 9-.5" stroke-width="4"/>
+      </g>
+      <use href="#leaves" transform="translate(-42 35) rotate(8)"/>
+      <use href="#leaves" transform="translate(-29 43) rotate(42) scale(.85)"/>
+      <use href="#leaves" transform="translate(44 -71) rotate(112)"/>
+      <use href="#leaves" transform="translate(21 -47) rotate(-7) scale(.8)"/>
+      <use href="#leaves" transform="translate(-54 -102) rotate(-16)"/>
+      <use href="#leaves" transform="translate(77 9) rotate(90) scale(1.12)"/>
+      <use href="#leaves" transform="translate(57 20) rotate(124) scale(.88)"/>
+    </g>
+  </defs>
+  <rect width="800" height="350" fill="#526583"/>
+  <circle cx="314" cy="88" r="48" fill="#65738c"/>
+  <circle cx="314" cy="88" r="40" fill="#e7e4ce"/>
+  <circle cx="314" cy="88" r="36" fill="#f6f0da"/>
+  <path d="M0 146q75 6 134 1t120-3q69-2 140 8l48 0m-164-7q33-2 58 0m74 12q78-7 150-3" fill="none" stroke="#8694a3" stroke-width="2" opacity=".65"/>
+  <!-- Offset tile runs and a low garden wall. -->
+  <path d="M0 143l190 14 115 27 204-9 89-20 202 7v94H0z" fill="#95a3ad"/>
+  <path d="m0 137 192 16 111 26 208-10 86-18 203 7v8l-202-7-89 20-207 10-118-27L0 148z" fill="#374b64"/>
+  <path d="M0 141l190 18 114 25 205-10 88-19 203 8" fill="none" stroke="#8797a5" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <path d="m0 207 111 11 197 10 255-16 237-18v156H0" fill="#b8c1c1"/>
+  <path d="M0 211q125 12 287 20l252-15 261-19m-800 35q146 13 287 16l236-12 277-23" fill="none" stroke="#8e9fa9" stroke-width="2"/>
+  <g fill="none" stroke="#92a2ac" stroke-width="1.5">
+    <path d="M0 261q188 15 377 10l423-28m-800 53q260 24 455 8l345-28m-507-48-72 33m74-17-177 99m296-117 19 12m-24 26 61 44m74-93 38 15m-398 47-79 55m451-65 110 53"/>
+  </g>
+  <path d="M0 126q57 2 94-7l33 12 30 4-16 9-30 3-111-4z" fill="#293e58"/>
+  <path d="M0 128q62 4 97-5 23 11 53 13" fill="none" stroke="#aeb6b6" stroke-width="3"/>
+  <path d="M16 142h9v92h-9zm98 1 8-1v76h-8z" fill="#344960"/>
+  <path d="M13 230h16v5H12zm96-15h16v5h-16z" fill="#576a7c"/>
+  <!-- Narrow, cool shadows cast across moonlit paving. -->
+  <g fill="#687d90" opacity=".72">
+    <path d="M800 281q-119 2-242 12T303 328q111-23 209-33 183-19 288-17z"/>
+    <path d="M732 285q-62-7-126-3l-61 6q87-5 181 1zm-120 8q-58 5-100 19l-61 19q43-18 101-31zm-42 6q-66-8-114-2l-60 6q66-3 100-3l69 4zm-90 13q-32 2-77 19l-44 16 65-27z"/>
+    <path d="M544 288q-32-19-65-13 27 3 45 13-36-4-62 3 35 3 82-3zm-100 13q-42-12-76-7 55 13 76 7zm-38 28q-53 20-89 16 35-11 89-16zm183-38q-23 15-66 20 27-14 66-20zm72-9q-38-21-75-14 58 15 75 14z"/>
+  </g>
+  <g color="#4a6176">
+    <use href="#bamboo" transform="translate(735 148) scale(.95 .84) rotate(-8)"/>
+    <use href="#bamboo" transform="translate(646 110) scale(.66 1) rotate(13)"/>
+  </g>
+  <g color="#253e56">
+    <use href="#bamboo" transform="translate(741 120) rotate(-10) scale(1.32)"/>
+    <use href="#bamboo" transform="translate(786 80) rotate(14) scale(1.47)"/>
+    <use href="#bamboo" transform="translate(655 203) rotate(-23) scale(.78 .9)"/>
+  </g>
+  <rect width="800" height="350" fill="url(#grain)"/>
+</svg>

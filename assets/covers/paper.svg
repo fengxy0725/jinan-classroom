@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <pattern id="grain" width="49" height="37" patternUnits="userSpaceOnUse">
+      <path d="m3 6 3-.5m13 9 3 .3m10 14 2-.6m6-23 5 1m-35 21 1 .3" fill="none" stroke="#8b655e" opacity=".27" stroke-width=".8"/>
+    </pattern>
+    <pattern id="mat" width="11" height="8" patternUnits="userSpaceOnUse">
+      <path d="m0 1 11 2M0 6l11 2" fill="none" stroke="#ad837a" opacity=".47" stroke-width=".8"/>
+    </pattern>
+    <pattern id="paper-edge" width="6" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 1h6" fill="none" stroke="#c2a89a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="350" fill="#e5d3c9"/>
+  <path d="m0 184 74 14 72-7 130 13 61-8 101 18 75-14 111 9 78-17 98 6v152H0z" fill="#d9bfb4"/>
+  <path d="M0 208q41-2 84 5t101-1m418 2q61-10 111-8t86-3m-683 82 60 4m390 6q61-7 135-4" fill="none" stroke="#bb9b91" opacity=".68"/>
+  <g transform="translate(354 163) rotate(-12)">
+    <path d="m-169-65 39-9q80 4 126 29 69-27 184-24l19 152q-112-5-177 23-61-21-170-16z" fill="#9f827a" opacity=".45" transform="translate(8 12)"/>
+    <path d="m-171-80 29-3q81 0 134 27 68-25 181-22l20 160q-109-6-177 22-68-19-174-17z" fill="#785c56"/>
+    <path d="m-168-75 35-1q84 3 126 27l20 143q-66-24-168-17z" fill="#e3cdb9"/>
+    <path d="m-7-49 23 143q74-27 172-19l-17-147q-107-4-178 23z" fill="#dec4af"/>
+    <path d="m-163 62q116-3 175 20l4 12q-80-24-170-17zm176 20q77-25 174-22l2 15q-103-5-173 19z" fill="url(#paper-edge)"/>
+    <path d="m-164-81q101-6 156 25l21 137q-70-25-167-19z" fill="#f2e2cf" stroke="#986f61" stroke-width="1.7"/>
+    <path d="M-8-56q76-31 178-23l15 139Q83 55 13 81z" fill="#f7eada" stroke="#986f61" stroke-width="1.7"/>
+    <path d="M-13-58q6 53 21 136l5 3q-7-78-21-137z" fill="#c9afa0"/>
+    <g fill="none" stroke="#c99f91" opacity=".7">
+      <path d="m-143-64 9 111q75-3 126 16l-15-110q-56-20-120-17zM12-45q61-22 142-18l11 105q-82-3-137 15z"/>
+      <path d="m-120-63 9 109m18-105 10 107m17-101 11 105m18-98 12 105M37-51l13 101m16-108L79 45m16-106 12 104m15-106 11 104"/>
+    </g>
+    <path d="m-145-69 17-.3m267 12 16-.5m-108 103 15-3" fill="none" stroke="#fff1da" stroke-width="1.7"/>
+  </g>
+  <!-- Inkstone, worn smooth along the lip. -->
+  <g transform="translate(631 132) rotate(15)">
+    <path d="M-31-40q40-18 66 5l6 62q-6 13-34 15-30 2-38-15z" fill="#aa8b80" opacity=".45" transform="translate(5 7)"/>
+    <path d="M-34-40q37-18 66 5l5 63q-7 12-33 13-30 1-39-15z" fill="#5b5655"/>
+    <path d="M-34-42q37-17 66 5l3 60q-9 10-33 12-26-1-35-15z" fill="#716a67" stroke="#4e4c4c" stroke-width="2"/>
+    <path d="M-24-27q26-13 47 3l2 35q-11 9-26 9-18 0-25-8z" fill="#423f42"/>
+    <path d="M-25-28q22-13 43-4m-38 42q17 10 37 1m-45 12q11 8 20 10" fill="none" stroke="#a48d80" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M-17-9q15-4 28-2" fill="none" stroke="#665f60" stroke-width="2"/>
+  </g>
+  <!-- Brush, laid diagonally beside the open ruled notebook. -->
+  <g transform="translate(528 252) rotate(-32)">
+    <path d="m-110 5 55-4 189-4 4 6-185 6z" fill="#9c7e77" opacity=".4" transform="translate(4 7)"/>
+    <path d="m-59-5 195-5 4 4-2 5-197 6z" fill="#9f644a" stroke="#745648" stroke-width="1.6"/>
+    <path d="m-54-3 189-5m-147 7 119-3m-60 4 74-3m-162 5 17-.4" fill="none" stroke="#d3ad86" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="m-64-6 17-.6 1 12-17 .4z" fill="#635557"/>
+    <path d="m-59-5 2 10m4-11 1 11" stroke="#bc9c83" stroke-width="1.2"/>
+    <path d="M-113 8q9-5 21-12 11-7 29-2l2 11q-18 7-30 4-12-3-22-1z" fill="#ede1cd" stroke="#826a62" stroke-width="1.4"/>
+    <path d="M-114 8q12-7 22-13l13 1-5 3 14 1-8 2 7 1q-11 5-20 4-12-1-23 1z" fill="#49474a"/>
+    <path d="m-99 6 18-3m2-2 8 1m-5 4 10-2" fill="none" stroke="#a99b91" stroke-width="1"/>
+  </g>
+  <path d="m0 323 41 3 22 24H0zm788-13 12 1v39h-48z" fill="url(#mat)" opacity=".7"/>
+  <rect width="800" height="350" fill="url(#grain)"/>
+</svg>
