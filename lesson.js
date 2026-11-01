@@ -177,23 +177,5 @@
   });
   showRecallCard();
 
-  if (lesson.sources?.length) {
-    byId('source').textContent = '本课依据以下课件改编。';
-    const sourceList = byId('source-list');
-    for (const source of lesson.sources) sourceList.append(node('li', source));
-    sourceList.hidden = false;
-  } else {
-    byId('source').textContent = lesson.credit ? '改编自课件《' + lesson.source + '》' : lesson.source;
-  }
-  if (lesson.credit) {
-    byId('credit').textContent = lesson.credit;
-    byId('credit').hidden = false;
-  }
-  if (lesson.reference) {
-    const reference = node('a', lesson.reference.title);
-    reference.href = lesson.reference.url;
-    byId('reference').append('参考资料　', reference);
-    byId('reference').hidden = false;
-  }
   byId('lesson').hidden = false;
 })();
