@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123e36">
+  <title>课堂讲义 · 锦安老师的公开课</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./lesson.css">
+  <script>window.lessons = [];</script>
+  <script defer src="./lessons/primary-chinese.js"></script>
+  <script defer src="./lessons/primary-history.js"></script>
+  <script defer src="./lessons/grade7.js"></script>
+  <script defer src="./lessons/grade8.js"></script>
+  <script defer src="./lessons/grade9.js"></script>
+  <script defer src="./lessons/junior-history.js"></script>
+  <script defer src="./lesson.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到讲义正文</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/favicon.svg" alt="" width="34" height="34">
+        <span>锦安老师的公开课</span>
+      </a>
+      <a class="return-link" href="./index.html#library"><span aria-hidden="true">←</span> 课程目录</a>
+    </div>
+  </header>
+  <main class="page" id="content" tabindex="-1">
+    <noscript><p>请开启浏览器的 JavaScript 来阅读互动讲义。</p><a href="./index.html#library">返回课程目录</a></noscript>
+    <article id="lesson" hidden>
+      <header class="cover">
+        <div class="cover-line"><span>课堂讲义</span><span lang="en">CLASS NOTES</span></div>
+        <div class="cover-text">
+          <p class="grade-label" id="metadata"></p>
+          <h1 id="title"></h1>
+          <p class="summary" id="summary"></p>
+        </div>
+        <div class="cover-foot"><span id="genre"></span><span id="type"></span></div>
+      </header>
+      <div class="spread">
+        <nav class="contents" aria-label="本课目录">
+          <p class="contents-title">本课目录</p>
+          <ol>
+            <li><a href="#warmup"><span>01</span> 课前一问</a></li>
+            <li><a href="#reading"><span>02</span> 一起读</a></li>
+            <li><a href="#explore"><span>03</span> 点一点</a></li>
+            <li><a href="#practice"><span>04</span> 试一试</a></li>
+          </ol>
+        </nav>
+        <div class="body-copy">
+          <section id="warmup">
+            <div class="section-head"><span>01</span><h2>课前一问</h2></div>
+            <p class="question-intro" id="warmup-text"></p>
+          </section>
+          <section id="reading">
+            <div class="section-head"><span>02</span><h2>一起读</h2></div>
+            <div id="focus"></div>
+          </section>
+          <section id="explore">
+            <div class="section-head"><span>03</span><h2>点一点</h2></div>
+            <p id="activity-prompt"></p>
+            <div class="choice-row" id="activity-choices" role="group" aria-label="探究内容"></div>
+            <div class="reveal" id="activity-detail" role="status" aria-live="polite">选一项，看看里面有什么。</div>
+          </section>
+          <section id="practice">
+            <div class="section-head"><span>04</span><h2>试一试</h2></div>
+            <p class="exercise-intro">先想一想，再选择答案。每题都可以重新作答。</p>
+            <div id="questions"></div>
+            <p class="score" id="score" aria-live="polite"></p>
+          </section>
+          <footer class="credits">
+            <h2>本课来源</h2>
+            <p id="source"></p>
+            <p id="credit" hidden></p>
+            <p id="reference" hidden></p>
+            <a class="back-to-library" href="./index.html#library">返回课程目录 <span aria-hidden="true">→</span></a>
+          </footer>
+        </div>
+      </div>
+    </article>
+    <div class="not-found" id="not-found" hidden>
+      <span class="grade-label">课堂讲义</span>
+      <h1>暂未找到这节课</h1>
+      <p>请回到课程目录，按年级和学科选择一节课。</p>
+      <a class="back-to-library" href="./index.html#library">返回课程目录 <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+  <footer class="site-footer"><span>锦安老师的公开课</span><span>语文 · 历史</span></footer>
+</body>
+</html>

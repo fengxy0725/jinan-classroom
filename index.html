@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>锦安老师的公开课 · 语文与历史互动课堂</title>
+<meta name="description" content="一至九年级的语文与历史互动课堂，按年级找课，一起读课文、探史料、做练习。">
+<link rel="icon" href="./assets/favicon.svg"><link rel="stylesheet" href="./style.css">
+<script>window.lessons=[];</script>
+<script defer src="./lessons/grade7.js"></script><script defer src="./lessons/grade8.js"></script><script defer src="./lessons/grade9.js"></script><script defer src="./lessons/primary-chinese.js"></script><script defer src="./lessons/primary-history.js"></script><script defer src="./lessons/junior-history.js"></script><script defer src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#library">跳至课程书架</a>
+<header class="masthead"><div class="wrap top">
+<a class="brand" href="./index.html"><img src="./assets/favicon.svg" width="37" height="37" alt=""><span>锦安老师的公开课</span></a>
+<nav aria-label="主导航"><a class="nav-home" href="./index.html">首页</a><a href="#library">课程书架</a><button id="about-button" type="button">关于课堂</button></nav>
+<button class="find-course" type="button" id="find"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>找一节课</span></button>
+</div></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-art" role="img" aria-label="展开的书页上，青山、小亭与一轮朱红的太阳组成一幅山水木刻。"></div>
+<div class="hero-copy"><div class="eyebrow hero-kicker"><i></i> JIN’AN OPEN CLASSROOM</div><h1 id="hero-title">锦安老师的<br><span>公开课</span><small aria-hidden="true">锦<br>安</small></h1>
+<p>一起读课文，探史料，在提问中发现。</p><a class="hero-cta" href="#library">浏览课程书架 <span aria-hidden="true">→</span></a></div>
+<div class="hero-foot"><span>语文与历史</span><i></i><span>一至九年级</span></div>
+</section>
+<section class="library" id="library" aria-labelledby="library-title">
+<div class="shelf-header"><div><div class="eyebrow section-kicker"><i></i> COURSE LIBRARY</div><h2 id="library-title">课程书架<span class="title-dot">.</span></h2></div>
+<p class="shelf-note">按年级与学科，找到今天的课堂。</p></div>
+<div class="filters"><div class="subjects" role="group" aria-label="筛选学科">
+<button type="button" data-subject="" aria-pressed="true">全部课程</button><button type="button" data-subject="语文" aria-pressed="false">语文</button><button type="button" data-subject="历史" aria-pressed="false">历史</button></div>
+<div class="filter-right"><label class="select"><span class="sr">筛选年级</span><select id="grade"><option value="">全部年级</option><option value="1">一年级</option><option value="2">二年级</option><option value="3">三年级</option><option value="4">四年级</option><option value="5">五年级</option><option value="6">六年级</option><option value="7">七年级</option><option value="8">八年级</option><option value="9">九年级</option></select></label>
+<label class="search"><span class="sr">按课名或关键词搜索</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.4"/><path d="m15 15 5 5"/></svg><input type="search" id="query" placeholder="搜索课名或关键词"></label></div></div>
+<div class="results-line"><div><span class="tiny-diamond"></span><span id="results" aria-live="polite"></span></div><span class="catalog-label">教学目录 &nbsp; / &nbsp; INDEX</span></div>
+<div id="cards" class="cards"></div><div id="more-wrap"><button type="button" id="more">查看更多课程 <span aria-hidden="true">↓</span></button></div>
+<noscript><p>请开启浏览器的 JavaScript，以浏览课程并使用互动练习。</p></noscript>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><div><img src="./assets/favicon.svg" width="26" height="26" alt="">锦安老师的公开课</div><span>语文 · 历史 &nbsp;｜&nbsp; 一至九年级</span><a href="#hero-title">回到页首 ↑</a></div></footer>
+<dialog id="about"><form method="dialog"><button aria-label="关闭关于课堂">×</button></form><div class="eyebrow section-kicker">ABOUT THE CLASSROOM</div><h2>关于课堂</h2><p>欢迎来到锦安老师的公开课。选一节课，可以自己边读边答，也可以和全班一起讨论。</p><p><strong>课件改编</strong>保留原课件的教学重点，在讲义中注明课件名称与授课教师。<strong>示范课</strong>用于补充学习活动，小学历史按启蒙拓展编排。</p><p>随堂练习可以反复尝试，答题结果只在当前页面显示。</p></dialog>
+</body></html>
