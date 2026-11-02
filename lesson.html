@@ -4,20 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; script-src 'self'; connect-src 'self'; media-src 'self' https:; object-src 'none'; form-action 'none'">
   <meta name="theme-color" content="#123e36">
   <title>课堂讲义 · 锦安老师的公开课</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./lesson.css?v=20261102-1">
-  <script>window.lessons = [];</script>
-  <script defer src="./lessons/primary-chinese.js"></script>
-  <script defer src="./lessons/primary-history.js"></script>
-  <script defer src="./lessons/grade7.js"></script>
-  <script defer src="./lessons/grade8.js"></script>
-  <script defer src="./lessons/grade9.js"></script>
-  <script defer src="./lessons/junior-history.js"></script>
-  <script defer src="./catalog.js?v=20261102-1"></script>
-  <script defer src="./lesson.js?v=20261102-1"></script>
-  <script defer src="./classroom-service.js?v=20261102-1"></script>
+  <link rel="stylesheet" href="./lesson.css?v=github-json-1">
+  <script defer src="./catalog.js?v=github-json-1"></script>
+  <script defer src="./lesson.js?v=github-json-1"></script>
 </head>
 <body>
   <a class="skip-link" href="#content">跳到讲义正文</a>
@@ -45,8 +38,8 @@
       </header>
       <section id="video-section" class="lesson-video" aria-labelledby="video-title" hidden>
         <div class="video-heading"><span>课堂视频</span><h2 id="video-title"></h2></div>
-        <video id="lesson-video" controls playsinline preload="metadata" aria-labelledby="video-title"></video>
-        <p id="video-error" role="status" hidden>暂时无法播放这段视频。你可以继续阅读本页讲义。</p>
+        <video id="lesson-video" controls playsinline preload="none" aria-labelledby="video-title"></video>
+        <p id="video-error" role="status" hidden>暂时无法播放这段视频。你可以继续阅读本页讲义。<button id="video-retry" type="button" class="video-retry" hidden>重试播放</button></p>
         <details id="transcript-panel" hidden><summary>查看视频文字稿</summary><p id="transcript-text"></p></details>
       </section>
       <div class="spread">
@@ -121,6 +114,6 @@
       <a class="back-to-library" href="./index.html#library">返回课程目录 <span aria-hidden="true">→</span></a>
     </div>
   </main>
-  <footer class="site-footer"><span>锦安老师的公开课</span><span>本课堂记录访问时间和浏览页面</span><span>语文 · 历史</span></footer>
+  <footer class="site-footer"><span>锦安老师的公开课</span><span>答题与回忆卡只留在本页</span><span>语文 · 历史</span></footer>
 </body>
 </html>

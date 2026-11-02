@@ -82,7 +82,7 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.8vw, 3.9rem); line-height: 1.24; let
 .option.incorrect { border-color: #b6775f; background: #f8ece3; }
 .option[aria-pressed="true"] .letter { color: var(--text); font-weight: bold; }
 .answer-feedback:not(:empty) { border-left: 3px solid #b49766; margin-top: .8rem; padding: .2rem 0 .2rem .9rem; }
-.retry { border: 0; background: transparent; margin-top: .35rem; padding: .25rem 0; min-height: 44px; color: var(--ink); text-decoration: underline; text-underline-offset: .25em; }
+.retry, .video-retry { border: 0; background: transparent; margin-top: .35rem; padding: .25rem 0; min-height: 44px; color: var(--ink); text-decoration: underline; text-underline-offset: .25em; }
 .recall-panel { padding: clamp(1rem, 3vw, 1.8rem); border: 1px solid var(--rule); border-top: 4px solid var(--ink); background: #fcfbf6; }
 .recall-bar { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; flex-wrap: wrap; color: var(--muted); font-size: .88rem; }
 .recall-reset { border: 0; padding: .2rem; background: transparent; min-height: 44px; color: var(--ink); text-decoration: underline; text-underline-offset: .2em; }

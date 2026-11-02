@@ -1,4 +1,4 @@
-window.lessons.push(
+[
   {
     "id": "g8-news",
     "title": "新闻群文阅读",
@@ -8,11 +8,6 @@ window.lessons.push(
     "unit": "上册 · 第一单元",
     "genre": "新闻",
     "summary": "把一次渡江、一场跳水、一场公祭分配给不同新闻栏目，看看记者各把什么放到读者眼前。",
-    "source": "感知结构 梳理要素——部编八（上）第一单元群文教学设计（第1课时）.pptx",
-    "sources": [
-      "感知结构 梳理要素——部编八（上）第一单元群文教学设计（第1课时）.pptx",
-      "揣摩语言 体悟情感——部编八（上）第一单元群文教学设计（第2课时）.pptx"
-    ],
     "warmup": "如果校报同写一场运动会，消息、特写和评论会有怎样不同的开头？",
     "focus": [
       {
@@ -63,7 +58,6 @@ window.lessons.push(
         "explanation": "聚焦典型瞬间并呈现动作细节，体现新闻特写的特点。"
       }
     ],
-    "credit": "原课件授课教师：杨晋闯。",
     "sessions": [
       {
         "label": "第一课时 · 读消息",
@@ -84,11 +78,6 @@ window.lessons.push(
     "unit": "上册 · 第三单元",
     "genre": "古文",
     "summary": "跟着郦道元先看山，再换季节听水声和猿声，读出峡江为何时急时静。",
-    "source": "三峡（1）.pptx",
-    "sources": [
-      "三峡（1）.pptx",
-      "三峡（2）.pptx"
-    ],
     "warmup": "写水以前，作者为什么让我们先仰望两岸的山？",
     "focus": [
       {
@@ -139,7 +128,6 @@ window.lessons.push(
         "explanation": "渔歌将自然声音连到人的悲感，比只说“有猿啼”更深一层。"
       }
     ],
-    "credit": "原课件授课教师：周晨。",
     "sessions": [
       {
         "label": "第二课时 · 比较四时山水",
@@ -156,10 +144,6 @@ window.lessons.push(
     "unit": "上册 · 第三单元",
     "genre": "古文",
     "summary": "从富春江上的一叶舟出发，辨认吴均写水、写山所用的不同视角。",
-    "source": "与朱元思书（1）.pptx",
-    "sources": [
-      "与朱元思书（1）.pptx"
-    ],
     "warmup": "“从流飘荡”和后面的急浪会不会矛盾？你准备从哪处景物解释？",
     "focus": [
       {
@@ -210,7 +194,6 @@ window.lessons.push(
         "explanation": "前文写景，到此由山水引出心境，寄予友人的也有这层情意。"
       }
     ],
-    "credit": "原课件授课教师：刘涵。",
     "sessions": [
       {
         "label": "第一课时 · 读通书信",
@@ -231,10 +214,6 @@ window.lessons.push(
     "unit": "上册 · 第三单元",
     "genre": "古文",
     "summary": "给陶弘景的山水短札标上视线和时间，再读结尾，体会他为什么把这幅景象说给友人听。",
-    "source": "答谢中书书.pptx",
-    "sources": [
-      "答谢中书书.pptx"
-    ],
     "warmup": "同一处山林，一整年和一整天的样子，作者怎样用几句话写下？",
     "focus": [
       {
@@ -280,8 +259,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "写信者认为领略奇景者难得，景物描写因而有了寻找知音的意味。"
       }
-    ],
-    "credit": "原课件授课教师：田佳佳。"
+    ]
   },
   {
     "id": "chengtiansi",
@@ -292,8 +270,6 @@ window.lessons.push(
     "unit": "上册 · 第三单元",
     "genre": "古文",
     "summary": "跟着苏轼走进月下的庭院，看看一个“盖”字怎样让眼前的水草变回竹柏的影子。",
-    "source": "记承天寺夜游.pptx",
-    "credit": "原课件授课教师为无锡市梅里中学田佳佳。",
     "warmup": "如果删掉“盖竹柏影也”，你会以为庭院里有什么？读到这一句时，眼前的画面发生了怎样的变化？",
     "focus": [
       {
@@ -358,9 +334,6 @@ window.lessons.push(
         "explanation": "“亦”是“也”。它接起了苏轼出门寻友和两人月下同行，读来有相逢时的会心。"
       }
     ],
-    "sources": [
-      "记承天寺夜游.pptx"
-    ],
     "sessions": [
       {
         "label": "短文两篇 · 第二课时",
@@ -377,11 +350,6 @@ window.lessons.push(
     "unit": "上册 · 第四单元",
     "genre": "散文",
     "summary": "还原父亲过月台买橘子的几个动作，再回看送行中的嘱咐，分辨当年的“我”和后来叙述的“我”。",
-    "source": "背影（1）.pptx",
-    "sources": [
-      "背影（1）.pptx",
-      "背影（2）.pptx"
-    ],
     "warmup": "如果把攀月台的过程改成“父亲很快买来了橘子”，读者会错过什么？",
     "focus": [
       {
@@ -428,7 +396,6 @@ window.lessons.push(
         "explanation": "当时的判断与后来体会到的爱相距很远，自嘲正来自这段距离。"
       }
     ],
-    "credit": "原课件授课教师：严悦。",
     "sessions": [
       {
         "label": "第一课时 · 细看车站背影",
@@ -449,11 +416,6 @@ window.lessons.push(
     "unit": "上册 · 第四单元",
     "genre": "散文",
     "summary": "沿着高原上远远出现的一列白杨，读准干、枝、叶的姿态，再追问赞树的文字为何会让人想到人。",
-    "source": "白杨礼赞（1）.pptx",
-    "sources": [
-      "白杨礼赞（1）.pptx",
-      "白杨礼赞（2）.pptx"
-    ],
     "warmup": "作者为什么要先写一大片看似单调的高原，才让白杨出现在视野里？",
     "focus": [
       {
@@ -500,7 +462,6 @@ window.lessons.push(
         "explanation": "托物言志先有一株可见的树，再从形态引出对人的赞美。"
       }
     ],
-    "credit": "原课件授课教师：朱星宇。",
     "sessions": [
       {
         "label": "第一课时 · 高原上的树",
@@ -517,11 +478,6 @@ window.lessons.push(
     "unit": "上册 · 第五单元",
     "genre": "说明文",
     "summary": "沿亭台、池沼和花木的布置读叶圣陶的说明，判断一座园林怎样让游人处处入画。",
-    "source": "19.苏州园林（1）.pptx",
-    "sources": [
-      "19.苏州园林（1）.pptx",
-      "19.苏州园林（2）.pptx"
-    ],
     "warmup": "作者没有按游览路线逐园介绍，读者为什么还能抓住苏州园林的共同特点？",
     "focus": [
       {
@@ -568,7 +524,6 @@ window.lessons.push(
         "explanation": "限定词把判断控制在材料能支持的范围内。"
       }
     ],
-    "credit": "原课件授课教师：杨苗苗。",
     "sessions": [
       {
         "label": "第一课时 · 读结构",
@@ -589,11 +544,6 @@ window.lessons.push(
     "unit": "上册 · 第五单元",
     "genre": "说明文",
     "summary": "给赵州桥和卢沟桥做两张对照卡，从桥的构造理解作者为什么挑这两个例子。",
-    "source": "中国石拱桥（1）.pptx",
-    "sources": [
-      "中国石拱桥（1）.pptx",
-      "中国石拱桥（2）.pptx"
-    ],
     "warmup": "只介绍一座单拱桥，能不能代表课件所说的中国石拱桥？",
     "focus": [
       {
@@ -640,7 +590,6 @@ window.lessons.push(
         "explanation": "“大约”说明所据材料只能支持一定范围，并不取消判断。"
       }
     ],
-    "credit": "原课件授课教师：杭冰。",
     "sessions": [
       {
         "label": "第一课时 · 从共性到两座桥",
@@ -661,11 +610,6 @@ window.lessons.push(
     "unit": "上册 · 第五单元",
     "genre": "科学小品",
     "summary": "按生命周期重排法布尔的观察，再回到课文看看他为什么先带我们去蝉的洞口。",
-    "source": "蝉（1）.pptx",
-    "sources": [
-      "蝉（1）.pptx",
-      "蝉（2）.pptx"
-    ],
     "warmup": "蝉先有卵，文章却先写地穴。这样安排有什么观察上的好处？",
     "focus": [
       {
@@ -732,11 +676,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古文",
     "summary": "给“天时、地利、人和”排出论证顺序，用攻城和守城两个例子检验次序的理由。",
-    "source": "孟子三章（1）.pptx",
-    "sources": [
-      "孟子三章（1）.pptx",
-      "孟子三章（2）.pptx"
-    ],
     "warmup": "城墙险固却守不住，这个情形支持文中的哪一步推理？",
     "focus": [
       {
@@ -783,7 +722,6 @@ window.lessons.push(
         "explanation": "战例是通向治国主张的证据，并非全文终点。"
       }
     ],
-    "credit": "原课件授课教师：沈静超。",
     "sessions": [
       {
         "label": "第一课时 · 攻守两例",
@@ -800,11 +738,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古文",
     "summary": "把景春和孟子的判断写在两栏，追问二人衡量“大丈夫”的尺度。",
-    "source": "孟子三章（1）.pptx",
-    "sources": [
-      "孟子三章（1）.pptx",
-      "孟子三章（2）.pptx"
-    ],
     "warmup": "能让诸侯惧怕，就足以证明一个人守得住原则吗？",
     "focus": [
       {
@@ -851,7 +784,6 @@ window.lessons.push(
         "explanation": "文章将得志与不得志并提，用来检验人在不同境遇中的选择。"
       }
     ],
-    "credit": "原课件授课教师：沈静超。",
     "sessions": [
       {
         "label": "第二课时 · 辩大丈夫",
@@ -868,10 +800,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古文",
     "summary": "把六位人物的经历同国家的反面例子并读，追踪篇末主张从何而来。",
-    "source": "孟子三章（3）.pptx",
-    "sources": [
-      "孟子三章（3）.pptx"
-    ],
     "warmup": "开头列举几位出身低微的人，能直接推出只要吃苦就会成功吗？",
     "focus": [
       {
@@ -918,7 +846,6 @@ window.lessons.push(
         "explanation": "前后从不同对象和方向说明忧患意识的价值。"
       }
     ],
-    "credit": "原课件授课教师：郑杰。",
     "sessions": [
       {
         "label": "第三课时 · 个人与国家",
@@ -935,11 +862,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "寓言",
     "summary": "听愚公之妻与智叟先后提问，判断谁在帮着想办法，谁认定事情没有可能。",
-    "source": "愚公移山（1）.pptx",
-    "sources": [
-      "愚公移山（1）.pptx",
-      "愚公移山（2）.pptx"
-    ],
     "warmup": "都说到移山的难处，愚公之妻和智叟的态度一样吗？",
     "focus": [
       {
@@ -986,7 +908,6 @@ window.lessons.push(
         "explanation": "愚公把连续的劳动和不再增长的山放到同一时间尺度上作比较。"
       }
     ],
-    "credit": "原课件授课教师：林胤志。",
     "sessions": [
       {
         "label": "第一课时 · 谁在移山",
@@ -1007,10 +928,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古诗",
     "summary": "跟随陶渊明采菊时的目光，读出住在人境却能远离喧扰的缘故。",
-    "source": "诗词五首（1）.pptx",
-    "sources": [
-      "诗词五首（1）.pptx"
-    ],
     "warmup": "“悠然见南山”的“见”换成“找”，那个采菊的人还是同一种心情吗？",
     "focus": [
       {
@@ -1057,7 +974,6 @@ window.lessons.push(
         "explanation": "在山气、归鸟中感到的真意，比一句抽象说明更丰富。"
       }
     ],
-    "credit": "原课件授课教师：宿铭华。",
     "sessions": [
       {
         "label": "第一课时 · 第5—22页",
@@ -1074,10 +990,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古诗",
     "summary": "从春草、花鸟一路读到白发，体会春日景物怎样触动杜甫对家国的忧思。",
-    "source": "诗词五首（1）.pptx",
-    "sources": [
-      "诗词五首（1）.pptx"
-    ],
     "warmup": "写城中春草茂盛，为什么没有带来轻松愉悦的气氛？",
     "focus": [
       {
@@ -1124,7 +1036,6 @@ window.lessons.push(
         "explanation": "景与情层层靠近，最后的细节把忧愁写得可见。"
       }
     ],
-    "credit": "原课件授课教师：宿铭华。",
     "sessions": [
       {
         "label": "第一课时 · 第23—37页",
@@ -1141,10 +1052,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古诗",
     "summary": "用颜色和声音还原李贺笔下的战场，看看画面怎样从压迫感转到将士的决心。",
-    "source": "诗词五首（2）.pptx",
-    "sources": [
-      "诗词五首（2）.pptx"
-    ],
     "warmup": "开头既有黑云又有亮甲，把这两种颜色分开读和连起来读有何不同？",
     "focus": [
       {
@@ -1191,7 +1098,6 @@ window.lessons.push(
         "explanation": "典故给将士何以奋战补上了情感和意志。"
       }
     ],
-    "credit": "原课件授课教师：宿铭华。",
     "sessions": [
       {
         "label": "第二课时 · 第2—14页",
@@ -1208,10 +1114,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "古诗",
     "summary": "从杜牧拾起的一段折戟读到东风，分清诗人眼前所见与设想中的历史。",
-    "source": "诗词五首（2）.pptx",
-    "sources": [
-      "诗词五首（2）.pptx"
-    ],
     "warmup": "一件残兵器怎样把四句短诗带进一场大战？",
     "focus": [
       {
@@ -1258,7 +1160,6 @@ window.lessons.push(
         "explanation": "后两句受假设条件支配，不能当作事件纪实。"
       }
     ],
-    "credit": "原课件授课教师：宿铭华。",
     "sessions": [
       {
         "label": "第二课时 · 第15—22页",
@@ -1275,10 +1176,6 @@ window.lessons.push(
     "unit": "上册 · 第六单元",
     "genre": "词",
     "summary": "跟着李清照从银河与千帆进入梦境，听她如何向天帝作答。",
-    "source": "诗词五首（2）.pptx",
-    "sources": [
-      "诗词五首（2）.pptx"
-    ],
     "warmup": "梦中能问路、能远行，为什么词人仍叹路长日暮？",
     "focus": [
       {
@@ -1325,7 +1222,6 @@ window.lessons.push(
         "explanation": "词人把心愿化成扬帆远行的动作，情绪由叹而起。"
       }
     ],
-    "credit": "原课件授课教师：宿铭华。",
     "sessions": [
       {
         "label": "第二课时 · 第23—36页",
@@ -1342,11 +1238,6 @@ window.lessons.push(
     "unit": "下册 · 第一单元",
     "genre": "小说",
     "summary": "沿平桥村的夜船去看戏，回来再追问“好戏”和“好豆”究竟好在哪里。",
-    "source": "初二年级 语文 社戏（第1课时）.pptx",
-    "sources": [
-      "初二年级 语文 社戏（第1课时）.pptx",
-      "初二年级 语文 社戏（第2课时）.pptx"
-    ],
     "warmup": "台上的戏未必合意，为什么“我”此后却一直惦记这一夜？",
     "focus": [
       {
@@ -1393,7 +1284,6 @@ window.lessons.push(
         "explanation": "小说还写到对台上演出的失望，更说明难忘的是整个经历。"
       }
     ],
-    "credit": "原课件授课教师：杜海燕。",
     "sessions": [
       {
         "label": "第一课时 · 排出行程",
@@ -1414,11 +1304,6 @@ window.lessons.push(
     "unit": "下册 · 第一单元",
     "genre": "现代诗",
     "summary": "把一首抒情诗按重逢、回忆、团聚、看新貌和展望读下去，听出信天游的口吻。",
-    "source": "初二年级 语文 回延安（第1课时）.pptx",
-    "sources": [
-      "初二年级 语文 回延安（第1课时）.pptx",
-      "初二年级 语文 回延安（第2课时）.pptx"
-    ],
     "warmup": "如果只说“我很激动”，会失去哪些让人感到亲切的延安生活细节？",
     "focus": [
       {
@@ -1465,7 +1350,6 @@ window.lessons.push(
         "explanation": "可见的物象为感情搭桥，配合反复和叠词形成歌唱感。"
       }
     ],
-    "credit": "原课件授课教师：胡敏怡。",
     "sessions": [
       {
         "label": "第一课时 · 回字串起五节",
@@ -1486,11 +1370,6 @@ window.lessons.push(
     "unit": "下册 · 第一单元",
     "genre": "散文",
     "summary": "把鼓声、后生与舞姿分别读出来，再试着让排比的节奏模拟一场鼓舞。",
-    "source": "初二年级 语文 安塞腰鼓（第1课时）.pptx",
-    "sources": [
-      "初二年级 语文 安塞腰鼓（第1课时）.pptx",
-      "初二年级 语文 安塞腰鼓（第2课时）.pptx"
-    ],
     "warmup": "不出现真的鼓声，只读一段文字，怎样让听者也感到节拍逼近？",
     "focus": [
       {
@@ -1537,7 +1416,6 @@ window.lessons.push(
         "explanation": "原有句式的密集节拍本身就是表现力量的手段。"
       }
     ],
-    "credit": "原课件授课教师：周尧骅。",
     "sessions": [
       {
         "label": "第一课时 · 看一场腰鼓",
@@ -1558,10 +1436,6 @@ window.lessons.push(
     "unit": "下册 · 第一单元",
     "genre": "散文",
     "summary": "从迎祖父、听故事等旧事追到结尾，观察同一盏灯怎样越照越远。",
-    "source": "初二年级 语文 灯笼.ppt",
-    "sources": [
-      "初二年级 语文 灯笼.ppt"
-    ],
     "warmup": "一盏灯为什么既能让人想起家人，也能让人想到历史与家国？",
     "focus": [
       {
@@ -1607,8 +1481,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "作者关心的是物与人的生活、记忆之间的关系。"
       }
-    ],
-    "credit": "原课件授课教师：王惠琇。"
+    ]
   },
   {
     "id": "g8-review1",
@@ -1619,10 +1492,6 @@ window.lessons.push(
     "unit": "下册 · 第一单元",
     "genre": "单元复习",
     "summary": "把人物动作、环境和议论分开放到阅读笔记里，再用证据说出段落含着的感情。",
-    "source": "初二年级 语文 八下第一单元复习课.pptx",
-    "sources": [
-      "初二年级 语文 八下第一单元复习课.pptx"
-    ],
     "warmup": "如果文中没有出现“关心”两个字，你怎样从动作看出关心？",
     "focus": [
       {
@@ -1668,8 +1537,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "环境的作用要由这一段具体的人与事决定。"
       }
-    ],
-    "credit": "原课件授课教师：孙琳。"
+    ]
   },
   {
     "id": "g8-wuhou",
@@ -1680,11 +1548,6 @@ window.lessons.push(
     "unit": "下册 · 第二单元",
     "genre": "说明文",
     "summary": "把花开的早迟当成观察记录，辨别物候的影响因素以及举例、比较的作用。",
-    "source": "初二年级 语文 大自然的语言（第1课时）.pptx",
-    "sources": [
-      "初二年级 语文 大自然的语言（第1课时）.pptx",
-      "初二年级 语文 大自然的语言（第2课时）.pptx"
-    ],
     "warmup": "两个城市的花开时间不同，是不是立刻就能断定是纬度造成的？",
     "focus": [
       {
@@ -1731,7 +1594,6 @@ window.lessons.push(
         "explanation": "减少纬度等因素的干扰，海陆差异才更值得考察。"
       }
     ],
-    "credit": "原课件授课教师：邹利宏。",
     "sessions": [
       {
         "label": "第一课时 · 梳理因果",
@@ -1752,10 +1614,6 @@ window.lessons.push(
     "unit": "下册 · 第二单元",
     "genre": "科学小品",
     "summary": "把南极的恐龙化石放在推理起点，区分作者看见的证据和用来解释证据的理论。",
-    "source": "初二年级 语文 《恐龙无处不有》.pptx",
-    "sources": [
-      "初二年级 语文 《恐龙无处不有》.pptx"
-    ],
     "warmup": "如果某地今天十分寒冷，发现恐龙化石能否证明恐龙生活时当地也一样寒冷？",
     "focus": [
       {
@@ -1801,8 +1659,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "先提出化石分布问题，再组织事实和理论作出解释。"
       }
-    ],
-    "credit": "原课件授课教师：周颖。"
+    ]
   },
   {
     "id": "g8-dayan",
@@ -1813,10 +1670,6 @@ window.lessons.push(
     "unit": "下册 · 第二单元",
     "genre": "观察随笔",
     "summary": "跟随观察者听雁群归来的鸣叫，分辨关于大雁的记录和作者由此生发的感情。",
-    "source": "初二年级 语文 大雁归来.ppt",
-    "sources": [
-      "初二年级 语文 大雁归来.ppt"
-    ],
     "warmup": "把“大雁又回来了”改成只报飞行数量，哪些有关人与鸟的意味会消失？",
     "focus": [
       {
@@ -1862,8 +1715,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "情感寄托在具体行为和季节变化上，记录也因关注而生动。"
       }
-    ],
-    "credit": "原课件授课教师：谢娟。"
+    ]
   },
   {
     "id": "g8-shijian",
@@ -1874,10 +1726,6 @@ window.lessons.push(
     "unit": "下册 · 第二单元",
     "genre": "科学小品",
     "summary": "读岩石怎样形成、又怎样留下往日痕迹，练习用短段落追踪说明的次序。",
-    "source": "初二年级 语文 时间的脚印.pptx",
-    "sources": [
-      "初二年级 语文 时间的脚印.pptx"
-    ],
     "warmup": "一块静止的岩石为什么会被说成记录时间的“书”？",
     "focus": [
       {
@@ -1923,8 +1771,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "把短段放回上下文，可以看见作者从形成转入岩石记录了什么。"
       }
-    ],
-    "credit": "原课件授课教师：任凭。"
+    ]
   },
   {
     "id": "g8-review2",
@@ -1935,10 +1782,6 @@ window.lessons.push(
     "unit": "下册 · 第二单元",
     "genre": "单元复习",
     "summary": "从说明对象、顺序和语言三方面审读一段文字，给出可以核对的赏析。",
-    "source": "初二年级 语文 八下第二单元复习课.ppt",
-    "sources": [
-      "初二年级 语文 八下第二单元复习课.ppt"
-    ],
     "warmup": "一段里有数字就只答“列数字”，这样的说明完成了吗？",
     "focus": [
       {
@@ -1984,8 +1827,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "这道题考查范围变化，应解释意义是否还准确。"
       }
-    ],
-    "credit": "原课件授课教师：董菊。"
+    ]
   },
   {
     "id": "g8-taoyuan",
@@ -1996,10 +1838,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "古文",
     "summary": "沿渔人的行踪进村、访人、出村，再看他留下的记号为什么没有引来第二次相遇。",
-    "source": "初二年级 语文 《桃花源记》.ppt",
-    "sources": [
-      "初二年级 语文 《桃花源记》.ppt"
-    ],
     "warmup": "如果故事停在渔人离开时，桃花源还会这样让人惦念吗？",
     "focus": [
       {
@@ -2045,8 +1883,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "先写有线索、再写不可达，使读者继续思考现实与理想的距离。"
       }
-    ],
-    "credit": "原课件授课教师：谢娟。"
+    ]
   },
   {
     "id": "g8-xiaoshitan",
@@ -2057,10 +1894,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "古文",
     "summary": "跟柳宗元由听水声到看游鱼，比较刚刚发现小潭的快乐与久坐潭边的凄清。",
-    "source": "初二年级 语文 《小石潭记》.ppt",
-    "sources": [
-      "初二年级 语文 《小石潭记》.ppt"
-    ],
     "warmup": "潭水不曾忽然变样，为什么同一个人先感到可乐，后来又觉得清冷？",
     "focus": [
       {
@@ -2106,8 +1939,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "游踪、环境与心情一同变化，不能只选一个词概括全文。"
       }
-    ],
-    "credit": "原课件授课教师：董秀琴。"
+    ]
   },
   {
     "id": "g8-hezhou",
@@ -2118,11 +1950,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "古文",
     "summary": "按船舱、船头、船尾和船背读一件微雕，让尺寸、位置与人物动作互相印证。",
-    "source": "初二年级 语文 核舟记（第1课时）.pptx",
-    "sources": [
-      "初二年级 语文 核舟记（第1课时）.pptx",
-      "初二年级 语文 核舟记（第2课时）.pptx"
-    ],
     "warmup": "为什么不先介绍船头的人物，却先打开船舱两侧的小窗？",
     "focus": [
       {
@@ -2169,7 +1996,6 @@ window.lessons.push(
         "explanation": "按空间顺序说明，还要照顾器物特征与主题。"
       }
     ],
-    "credit": "原课件授课教师：李刚。",
     "sessions": [
       {
         "label": "第一课时 · 船舱与船头",
@@ -2190,10 +2016,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "古诗",
     "summary": "从河洲上的鸟鸣读到君子的辗转，再分辨琴瑟与钟鼓所呈现的愿望。",
-    "source": "初二年级 语文 《关雎》.pptx",
-    "sources": [
-      "初二年级 语文 《关雎》.pptx"
-    ],
     "warmup": "诗中从失眠转到琴瑟钟鼓，是写思念消失了，还是把愿望唱得更清楚了？",
     "focus": [
       {
@@ -2239,8 +2061,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "难以入睡直接写出思念在主人公身上的表现。"
       }
-    ],
-    "credit": "原课件授课教师：王蕊。"
+    ]
   },
   {
     "id": "jianjia",
@@ -2251,8 +2072,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "古诗",
     "summary": "沿着水岸读三章诗，圈出反复出现和悄悄变换的词，体会追寻者的心情。",
-    "source": "初二年级 语文 蒹葭.pptx",
-    "credit": "原课件授课教师为无锡市太湖格致中学秦晨光。",
     "warmup": "假如第二、三章都只写一句“我又去找了”，朗读时会少掉哪些声音和画面？",
     "focus": [
       {
@@ -2317,9 +2136,6 @@ window.lessons.push(
         "explanation": "先言他物，再引出所咏之情，是“兴”。岸边秋景既开出场面，也给追寻染上清冷的意味。"
       }
     ],
-    "sources": [
-      "初二年级 语文 蒹葭.pptx"
-    ],
     "sessions": [
       {
         "label": "诵读与比较",
@@ -2336,10 +2152,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "写作",
     "summary": "把一篇只复述故事的读后感改成有观点的短文，练习把“读了什么”与“我为何这样想”连起来。",
-    "source": "初二年级 语文 学写读后感.pptx",
-    "sources": [
-      "初二年级 语文 学写读后感.pptx"
-    ],
     "warmup": "对着一页情节梗概，你能圈出作者自己最想说的一句话吗？",
     "focus": [
       {
@@ -2385,8 +2197,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "读后感需要把书中的内容和自己的理解接起来，联想不能游离中心。"
       }
-    ],
-    "credit": "原课件授课教师：吴丹。"
+    ]
   },
   {
     "id": "g8-review3",
@@ -2397,10 +2208,6 @@ window.lessons.push(
     "unit": "下册 · 第三单元",
     "genre": "单元复习",
     "summary": "在桃花源、小石潭与核舟之间比较词义，再用原句判断一条阅读结论能否成立。",
-    "source": "初二年级 语文 八下第三单元复习课.pptx",
-    "sources": [
-      "初二年级 语文 八下第三单元复习课.pptx"
-    ],
     "warmup": "同一个“乃”在不同句子里，都能直接译成同一个现代汉语词吗？",
     "focus": [
       {
@@ -2446,8 +2253,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "顺序由正文呈现的转换决定，不能只凭题目有“记”字下结论。"
       }
-    ],
-    "credit": "原课件授课教师：高羽。"
+    ]
   },
   {
     "id": "g8-fulei",
@@ -2458,10 +2264,6 @@ window.lessons.push(
     "unit": "下册 · 名著导读",
     "genre": "名著导读",
     "summary": "围绕“如何谈艺术”读一组书信，把教诲、鼓励和子女的回应放在一起看。",
-    "source": "初二年级 语文 《傅雷家书》导读.pptx",
-    "sources": [
-      "初二年级 语文 《傅雷家书》导读.pptx"
-    ],
     "warmup": "从家书摘一句劝告，够不够说明父子怎样交流？还可以找哪一种材料？",
     "focus": [
       {
@@ -2507,8 +2309,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "具体的困惑与回应使读者能理解严厉、鼓励或商量等不同表达。"
       }
-    ],
-    "credit": "原课件授课教师：周颖。"
+    ]
   },
   {
     "id": "g8-shiwei",
@@ -2519,10 +2320,6 @@ window.lessons.push(
     "unit": "下册 · 课外古诗词诵读",
     "genre": "古诗",
     "summary": "跟着两章重复的问句读劳作之苦，比较暮色、露水与泥泞中的声音。",
-    "source": "初二年级 语文 古诗诵读：式微、送杜少府之任蜀州.pptx",
-    "sources": [
-      "初二年级 语文 古诗诵读：式微、送杜少府之任蜀州.pptx"
-    ],
     "warmup": "主人公两次问为什么不归，是真的不知道原因吗？",
     "focus": [
       {
@@ -2569,7 +2366,6 @@ window.lessons.push(
         "explanation": "句式相近时，变化的词承担新的感官细节。"
       }
     ],
-    "credit": "原课件授课教师：王东亮。",
     "sessions": [
       {
         "label": "课外诵读 · 第2—16页",
@@ -2586,10 +2382,6 @@ window.lessons.push(
     "unit": "下册 · 课外古诗词诵读",
     "genre": "古诗",
     "summary": "从相隔的两地读到“比邻”，看王勃怎样把送别话说得开阔。",
-    "source": "初二年级 语文 古诗诵读：式微、送杜少府之任蜀州.pptx",
-    "sources": [
-      "初二年级 语文 古诗诵读：式微、送杜少府之任蜀州.pptx"
-    ],
     "warmup": "分明要去不同地方，两个人怎么会仍像邻居一样？",
     "focus": [
       {
@@ -2636,7 +2428,6 @@ window.lessons.push(
         "explanation": "“若”写感受中的亲近，没有取消旅程的遥远。"
       }
     ],
-    "credit": "原课件授课教师：王东亮。",
     "sessions": [
       {
         "label": "课外诵读 · 第17—32页",
@@ -2653,10 +2444,6 @@ window.lessons.push(
     "unit": "下册 · 课外古诗词诵读",
     "genre": "古诗",
     "summary": "跟随两章追问和城阙上的徘徊，读出等待的人为何会觉得时间那么长。",
-    "source": "初二年级 语文 课外古诗词诵读.pptx",
-    "sources": [
-      "初二年级 语文 课外古诗词诵读.pptx"
-    ],
     "warmup": "“一日不见，如三月兮”是记日历，还是表达人等候时的感受？",
     "focus": [
       {
@@ -2703,7 +2490,6 @@ window.lessons.push(
         "explanation": "客观一天与主观漫长并置，思念由此有了刻度。"
       }
     ],
-    "credit": "原课件授课教师：强晓华。",
     "sessions": [
       {
         "label": "课外诵读 · 第2—9页",
@@ -2720,10 +2506,6 @@ window.lessons.push(
     "unit": "下册 · 课外古诗词诵读",
     "genre": "古诗",
     "summary": "从洞庭水面的浩大读到“无舟楫”，辨认一首赠诗怎样委婉表达自己的心愿。",
-    "source": "初二年级 语文 课外古诗词诵读.pptx",
-    "sources": [
-      "初二年级 语文 课外古诗词诵读.pptx"
-    ],
     "warmup": "前四句都在写湖，后四句为何忽然想到渡水和垂钓？",
     "focus": [
       {
@@ -2770,7 +2552,6 @@ window.lessons.push(
         "explanation": "诗题和末尾的羡鱼使原本的渡湖动作带上了陈情意味。"
       }
     ],
-    "credit": "原课件授课教师：强晓华。",
     "sessions": [
       {
         "label": "课外诵读 · 第10—19页",
@@ -2787,10 +2568,6 @@ window.lessons.push(
     "unit": "下册 · 第四单元",
     "genre": "演讲词",
     "summary": "循着闻一多的称呼、反问和语气变化，听清讲话者在不同句子里面对的是谁。",
-    "source": "初二年级 语文 最后一次讲演.pptx",
-    "sources": [
-      "初二年级 语文 最后一次讲演.pptx"
-    ],
     "warmup": "同一场讲演中，“你们”和“我们”所指相同吗？听众的位置怎样随称呼发生变化？",
     "focus": [
       {
@@ -2836,8 +2613,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "代词对象可能转换，辨清对象才谈得上语气与效果。"
       }
-    ],
-    "credit": "原课件授课教师：董秀琴。"
+    ]
   },
   {
     "id": "g8-gezhi",
@@ -2848,10 +2624,6 @@ window.lessons.push(
     "unit": "下册 · 第四单元",
     "genre": "演讲词",
     "summary": "比较对着竹子沉思与实际动手实验的两条路线，找出丁肇中所强调的求知方式。",
-    "source": "初二年级 语文 应有格物致知精神.pptx",
-    "sources": [
-      "初二年级 语文 应有格物致知精神.pptx"
-    ],
     "warmup": "同样在“研究竹子”，什么行动才可能让原来的看法受到事实检验？",
     "focus": [
       {
@@ -2897,8 +2669,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "尊重实践所得证据，比把现成观点当作结论更符合演讲主旨。"
       }
-    ],
-    "credit": "原课件授课教师：董秀琴。"
+    ]
   },
   {
     "id": "g8-wangxuan",
@@ -2909,10 +2680,6 @@ window.lessons.push(
     "unit": "下册 · 第四单元",
     "genre": "演讲词",
     "summary": "从王选扶植年轻人的决定出发，听他怎样用自身经历和幽默同听众交流。",
-    "source": "初二年级 语文 我一生中的重要抉择.pptx",
-    "sources": [
-      "初二年级 语文 我一生中的重要抉择.pptx"
-    ],
     "warmup": "一位有名望的科学家为什么要开自己的玩笑，再谈年轻人接班？",
     "focus": [
       {
@@ -2958,8 +2725,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "自嘲既拉近距离，也为严肃观点提供了易理解的入口。"
       }
-    ],
-    "credit": "原课件授课教师：姚制清。"
+    ]
   },
   {
     "id": "g8-aolin",
@@ -2970,10 +2736,6 @@ window.lessons.push(
     "unit": "下册 · 第四单元",
     "genre": "演讲词",
     "summary": "把顾拜旦庆典演讲里的竞技乐趣、教育与大众参与区分开来，看他怎样拓展听众对体育的理解。",
-    "source": "初二年级 语文 庆祝奥林匹克运动复兴25周年.pptx",
-    "sources": [
-      "初二年级 语文 庆祝奥林匹克运动复兴25周年.pptx"
-    ],
     "warmup": "如果一场庆典只统计金牌数量，会漏掉演讲者看重的什么？",
     "focus": [
       {
@@ -3019,8 +2781,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "希望与前面对现实挑战的回顾相接，指向未来行动。"
       }
-    ],
-    "credit": "原课件授课教师：任凭。"
+    ]
   },
   {
     "id": "g8-jiangyangao",
@@ -3031,10 +2792,6 @@ window.lessons.push(
     "unit": "下册 · 第四单元",
     "genre": "写作",
     "summary": "为班级读书分享会准备开场和结尾，检验每句话能否让在场同学听懂、愿意听下去。",
-    "source": "初二年级 语文 撰写演讲稿.pptx",
-    "sources": [
-      "初二年级 语文 撰写演讲稿.pptx"
-    ],
     "warmup": "写在纸上工整的一段话，为什么读给同学听起来却可能很费力？",
     "focus": [
       {
@@ -3080,8 +2837,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "可执行的邀请把主张落到现场行动，又扣住了主题。"
       }
-    ],
-    "credit": "原课件授课教师：陈作为。"
+    ]
   },
   {
     "id": "g8-review4",
@@ -3092,10 +2848,6 @@ window.lessons.push(
     "unit": "下册 · 第四单元",
     "genre": "单元复习",
     "summary": "拆开一个校园提案，区分讨论的题目、说话人的判断以及支持判断的证据。",
-    "source": "初二年级 语文 八下第四单元复习课.pptx",
-    "sources": [
-      "初二年级 语文 八下第四单元复习课.pptx"
-    ],
     "warmup": "“校园合作”是一个问题，还是已经说明了发言者的立场？",
     "focus": [
       {
@@ -3141,8 +2893,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "关键是能否说明主张，材料的数量不能代替论证。"
       }
-    ],
-    "credit": "原课件授课教师：冯群超。"
+    ]
   },
   {
     "id": "g8-hukou",
@@ -3153,10 +2904,6 @@ window.lessons.push(
     "unit": "下册 · 第五单元",
     "genre": "游记",
     "summary": "跟梁衡两次到壶口，比较雨季与枯水季节的立足点，再细看河水冲入龙槽后的变化。",
-    "source": "初二年级 语文 壶口瀑布.pptx",
-    "sources": [
-      "初二年级 语文 壶口瀑布.pptx"
-    ],
     "warmup": "同是壶口瀑布，为什么一次只能远听，一次却能走近细看？",
     "focus": [
       {
@@ -3202,8 +2949,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "石头留下的结果能反证看似柔和的水具有力量。"
       }
-    ],
-    "credit": "原课件授课教师：陈国平。"
+    ]
   },
   {
     "id": "g8-geladandong",
@@ -3214,11 +2960,6 @@ window.lessons.push(
     "unit": "下册 · 第五单元",
     "genre": "游记",
     "summary": "一边标出冰塔林的视角，一边标出身体的不适，看两条记录怎样合成一次真实的旅行。",
-    "source": "初二年级 语文 在长江源头各拉丹冬（第1课时）.pptx",
-    "sources": [
-      "初二年级 语文 在长江源头各拉丹冬（第1课时）.pptx",
-      "初二年级 语文 在长江源头各拉丹冬（第2课时）.pptx"
-    ],
     "warmup": "若只留下冰山美景，删去冻疮、疼痛和高烧，这篇游记会发生什么变化？",
     "focus": [
       {
@@ -3265,7 +3006,6 @@ window.lessons.push(
         "explanation": "观察点和可见细节结合，才构成有依据的描写。"
       }
     ],
-    "credit": "原课件授课教师：陈其明。",
     "sessions": [
       {
         "label": "第一课时 · 走进冰雪",
@@ -3286,10 +3026,6 @@ window.lessons.push(
     "unit": "下册 · 第五单元",
     "genre": "游记",
     "summary": "山上的云彩和下山的车夫用了两种笔调，辨一辨马克·吐温如何让读者既看景又遇人。",
-    "source": "初二年级 语文 登勃朗峰.ppt",
-    "sources": [
-      "初二年级 语文 登勃朗峰.ppt"
-    ],
     "warmup": "如果全篇只画山峰，会漏掉下山路上什么难忘的角色？",
     "focus": [
       {
@@ -3335,8 +3071,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "人物的具体言行支撑性格判断，不必只加“风趣”一词。"
       }
-    ],
-    "credit": "原课件授课教师：唐清来。"
+    ]
   },
   {
     "id": "g8-lijiang",
@@ -3347,10 +3082,6 @@ window.lessons.push(
     "unit": "下册 · 第五单元",
     "genre": "游记",
     "summary": "让一滴水当讲述者，沿雪山、水道、街巷与人家串起丽江的自然和生活。",
-    "source": "初二年级 语文 一滴水经过丽江.pptx",
-    "sources": [
-      "初二年级 语文 一滴水经过丽江.pptx"
-    ],
     "warmup": "如果把“我”从一滴水换成普通游客，哪些观察位置就不那么自然了？",
     "focus": [
       {
@@ -3396,8 +3127,7 @@ window.lessons.push(
         "answer": 0,
         "explanation": "第一人称水滴的行进和可感知细节延续了叙述设定。"
       }
-    ],
-    "credit": "原课件授课教师：赵贞珍。"
+    ]
   },
   {
     "id": "g8-xieyouji",
@@ -3408,10 +3138,6 @@ window.lessons.push(
     "unit": "下册 · 第五单元",
     "genre": "写作",
     "summary": "把流水账变成一段校园游记，用游踪定位，让游人看到你在某处真正停下来的理由。",
-    "source": "初二年级 语文 学写游记.ppt",
-    "sources": [
-      "初二年级 语文 学写游记.ppt"
-    ],
     "warmup": "从校门走到操场有七个拐弯，是不是每个拐弯都要占一段？",
     "focus": [
       {
@@ -3457,8 +3183,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "立足点和细节为感情提供依据。"
       }
-    ],
-    "credit": "原课件授课教师：刘星颖。"
+    ]
   },
   {
     "id": "g8-jixi",
@@ -3469,10 +3194,6 @@ window.lessons.push(
     "unit": "下册 · 第五单元",
     "genre": "口语交际",
     "summary": "面对临时邀请，用简短的开头、一个要点和合适的收束，把意思送到现场听众耳边。",
-    "source": "初二年级 语文 口语交际：即席讲话.pptx",
-    "sources": [
-      "初二年级 语文 口语交际：即席讲话.pptx"
-    ],
     "warmup": "在颁奖仪式上临时发言，你会把平日写好的长篇自我介绍全部读出来吗？",
     "focus": [
       {
@@ -3518,8 +3239,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "灵活应变是为了恢复表达与听众的联系，不是另开话题。"
       }
-    ],
-    "credit": "原课件授课教师：强晓华。"
+    ]
   },
   {
     "id": "g8-beiming",
@@ -3530,10 +3250,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古文",
     "summary": "先贴着鹏的翅膀飞，再从高空向下看，体会庄子的想象怎样改变观看世界的尺度。",
-    "source": "初二年级 语文 《庄子》二则（第1课时）.ppt",
-    "sources": [
-      "初二年级 语文 《庄子》二则（第1课时）.ppt"
-    ],
     "warmup": "“天之苍苍”是天固定的颜色，还是因为我们相隔太远？庄子为什么在这里发问？",
     "focus": [
       {
@@ -3580,7 +3296,6 @@ window.lessons.push(
         "explanation": "看与被看的位置互换，眼前经验便有了可追问之处。"
       }
     ],
-    "credit": "原课件授课教师：沈萍。",
     "sessions": [
       {
         "label": "第一课时 · 鲲鹏与视角",
@@ -3597,10 +3312,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古文",
     "summary": "用两种颜色标出濠梁上的问答，辨清惠子在追问什么、庄子又把话题转到了哪里。",
-    "source": "初二年级 语文 《庄子》二则（第2课时）.ppt",
-    "sources": [
-      "初二年级 语文 《庄子》二则（第2课时）.ppt"
-    ],
     "warmup": "同一个“安知”，可以问“怎么知道”，也可以问“在哪里知道”，这会怎样改变辩论？",
     "focus": [
       {
@@ -3647,7 +3358,6 @@ window.lessons.push(
         "explanation": "把“怎样知道”和“在哪里知道”分开，才能读出转换。"
       }
     ],
-    "credit": "原课件授课教师：沈萍。",
     "sessions": [
       {
         "label": "第二课时 · 分角色辩论",
@@ -3664,10 +3374,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古文",
     "summary": "把食用佳肴、学习道理和教人时遇到困惑连成一条推理链，读懂“教学相长”。",
-    "source": "初二年级 语文 《礼记》二则.pptx",
-    "sources": [
-      "初二年级 语文 《礼记》二则.pptx"
-    ],
     "warmup": "给别人讲一道题，讲到一半卡住了，这样的“困”能带来什么？",
     "focus": [
       {
@@ -3714,7 +3420,6 @@ window.lessons.push(
         "explanation": "困惑只是起点，后续的自强才体现相长。"
       }
     ],
-    "credit": "原课件授课教师：周丽洁。",
     "sessions": [
       {
         "label": "全篇合读 · 第3—12页",
@@ -3731,10 +3436,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古文",
     "summary": "为“大同”社会的设想做一张生活图，从选贤、赡养和劳动安排理解“天下为公”。",
-    "source": "初二年级 语文 《礼记》二则.pptx",
-    "sources": [
-      "初二年级 语文 《礼记》二则.pptx"
-    ],
     "warmup": "对一个孩子、一个独居老人和一个劳动者来说，文中的“大同”各意味着什么？",
     "focus": [
       {
@@ -3781,7 +3482,6 @@ window.lessons.push(
         "explanation": "文意从制度与生活安排逐步落到可以想象的结果。"
       }
     ],
-    "credit": "原课件授课教师：周丽洁。",
     "sessions": [
       {
         "label": "全篇合读 · 第13—26页",
@@ -3798,10 +3498,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古文",
     "summary": "追踪千里马从吃不饱到被断言“不存在”的经过，辨清韩愈真正指责的是谁。",
-    "source": "初二年级 语文 马说.pptx",
-    "sources": [
-      "初二年级 语文 马说.pptx"
-    ],
     "warmup": "一匹马没有表现出千里之能，怎样判断是它自身不足，还是饲养与使用失当？",
     "focus": [
       {
@@ -3847,8 +3543,7 @@ window.lessons.push(
         "answer": 1,
         "explanation": "伯乐、千里马与食马者的关系构成寄托，事实与评价之间的反差是关键。"
       }
-    ],
-    "credit": "原课件授课教师：符徐晶。"
+    ]
   },
   {
     "id": "g8-shihaoli",
@@ -3859,10 +3554,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古诗",
     "summary": "把一次夜间捉人分作暮投、夜听和天明辞别，追踪诗人写下了谁的声音，又省略了谁的话。",
-    "source": "初二年级 语文 石壕吏.pptx",
-    "sources": [
-      "初二年级 语文 石壕吏.pptx"
-    ],
     "warmup": "我们听到老妇连续诉说，却很少听见差役的问句。怎样从她的回答中读出压力？",
     "focus": [
       {
@@ -3908,8 +3599,7 @@ window.lessons.push(
         "answer": 2,
         "explanation": "“独”与夜里的场景相照，家庭遭遇无需长篇说明。"
       }
-    ],
-    "credit": "原课件授课教师：厉夏杰。"
+    ]
   },
   {
     "id": "g8-maowu",
@@ -3920,10 +3610,6 @@ window.lessons.push(
     "unit": "下册 · 第六单元",
     "genre": "古诗",
     "summary": "把秋风卷茅、群童抱茅、长夜漏雨与想望广厦分层朗读，听杜甫如何从一家的寒冷想到天下寒士。",
-    "source": "初二年级 语文 《茅屋为秋风所破歌》.pptx",
-    "sources": [
-      "初二年级 语文 《茅屋为秋风所破歌》.pptx"
-    ],
     "warmup": "若诗写到屋漏就结束，少掉的只是一个明亮的结尾吗？",
     "focus": [
       {
@@ -3969,7 +3655,6 @@ window.lessons.push(
         "answer": 0,
         "explanation": "这些细节能说明诗人焦急、无助的感受，与之后长夜受冻相连。"
       }
-    ],
-    "credit": "原课件授课教师：王东亮。"
+    ]
   }
-);
+]

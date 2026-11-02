@@ -5,32 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://jinan-classroom-studio.fengxy732.chatgpt.site; media-src blob:; img-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
-  <title>教师工作台 · 锦安老师的公开课</title>
-  <link rel="icon" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="./studio.css?v=20261102-2">
-  <link rel="stylesheet" href="./access.css?v=20261102-2">
-  <script defer src="./runtime.js?v=20261102-2"></script>
-  <script defer src="./access.js?v=20261102-2"></script>
+  <meta name="theme-color" content="#153b32">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>教师入口 · 锦安老师的公开课</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./teacher.css">
 </head>
 <body>
-  <main id="access-panel" class="access-panel">
-    <a class="access-brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="32" height="32">锦安老师的公开课</a>
-    <section class="access-card" aria-labelledby="access-title">
-      <p class="access-eyebrow">教师专用</p>
-      <h1 id="access-title">教师工作台</h1>
-      <p id="access-note" role="status" aria-live="polite">点击“教师登录”，在原工作台验证账号。完成后会自动回到这里，编辑课程、管理视频和查看访问记录。</p>
-      <div class="access-actions">
-        <button id="access-login" type="button">教师登录</button>
-        <button id="access-renew" type="button" hidden>重新验证并继续</button>
-        <button id="access-retry" type="button" hidden>重新载入工作台</button>
-        <a id="access-canonical" href="https://fengxy0725.github.io/jinan-classroom/teacher/" hidden>打开在线教师工作台</a>
-      </div>
-      <small>离开或刷新本页后需要重新验证身份。</small>
-      <noscript><p>请开启 JavaScript 后重新载入本页。</p></noscript>
+  <header class="masthead">
+    <div class="teacher-wrap teacher-header">
+      <a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="34" height="34">锦安老师的公开课</a>
+      <a class="back-link" href="../index.html">返回课堂 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="teacher-wrap">
+    <section class="teacher-intro" aria-labelledby="teacher-title">
+      <p class="section-label">教师入口</p>
+      <h1 id="teacher-title">课程管理</h1>
+      <p>使用有仓库写入权限的 GitHub 账号登录。登录后会打开课程目录，可以修改讲义、增加新课或下架课程。</p>
+      <a class="login-link" href="https://github.com/login?return_to=%2Ffengxy0725%2Fjinan-classroom%2Ftree%2Fmain%2Fcourses">登录 GitHub 管理课程 <span aria-hidden="true">→</span></a>
+      <a class="direct-link" href="https://github.com/fengxy0725/jinan-classroom/tree/main/courses">已登录？直接打开课程目录</a>
     </section>
-    <a href="../index.html">← 返回公开课堂</a>
+    <section class="teacher-guide" aria-labelledby="guide-title">
+      <p class="section-label">操作说明</p>
+      <h2 id="guide-title">修改一节课</h2>
+      <ol>
+        <li><strong>选分组。</strong>在课程目录打开对应年级或科目的文件，用课名找到讲义。</li>
+        <li><strong>改内容。</strong>点击文件右上角的铅笔，修改引号内的文字，保留课程编号。</li>
+        <li><strong>提交并检查。</strong>点击 <span lang="en">Commit changes</span> 提交修改。网站发布完成后，打开学生课堂检查该课。</li>
+      </ol>
+      <a class="guide-link" href="https://github.com/fengxy0725/jinan-classroom/blob/main/teacher/README.md">查看新增、下架和添加视频的详细步骤 <span aria-hidden="true">→</span></a>
+      <p><a class="guide-link" href="https://github.com/fengxy0725/jinan-classroom/upload/main/videos">在 GitHub 上传公开教学短片 <span aria-hidden="true">→</span></a></p>
+    </section>
+    <aside class="teacher-note">
+      <strong>这里是公开仓库。</strong> 学生和访客都可以阅读课程文件，只有拥有写入权限的账号才能修改已发布的课程。未公开的草稿和访客记录请保存在自己的私有资料中。
+    </aside>
   </main>
-  <div id="teacher-workspace" hidden></div>
 </body>
 </html>
