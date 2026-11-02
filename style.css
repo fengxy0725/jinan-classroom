@@ -106,3 +106,28 @@ dialog{max-width:min(460px,calc(100% - 30px));padding:33px 28px 23px;background:
 }
 
 .visit-notice{margin-block:0;padding-bottom:14px;font-size:12px;color:var(--muted)}
+
+.top { gap: clamp(12px, 2.3vw, 35px); }
+.top nav { gap: clamp(12px, 2.1vw, 30px); }
+.top nav a:first-child { color: var(--clay); font-weight: 650; }
+.hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.hero-library { padding: 8px 12px; border: 1px solid #d8d7b1; border-radius: 4px; background: #123e36; color: #fff7dd; font-size: .88rem; }
+.hero-library:hover { background: #234e40; }
+.teacher-note { display: grid; grid-template-columns: minmax(135px, .8fr) minmax(0, 2fr); gap: clamp(20px, 4vw, 60px); align-items: start; padding: 22px clamp(18px, 3vw, 42px); margin: 20px 0 0; border-left: 3px solid #b49870; background: #edeede; }
+.teacher-note h2 { font: 700 clamp(22px, 2vw, 29px)/1.4 var(--serif); margin: .25rem 0 0; }
+.teacher-note p { margin: 0; line-height: 1.85; }
+.teacher-note button { background: none; border: 0; color: var(--clay); font: inherit; font-size: .9rem; padding: .35rem 0; text-underline-offset: .27em; }
+.teacher-note button:hover { text-decoration: underline; }
+.subject-books { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+.catalog-status { margin: 18px 0; color: var(--muted); }
+.catalog-status button { font: inherit; padding: .35rem .8rem; min-height: 44px; border-radius: 4px; border: 1px solid var(--ink); background: var(--paper); }
+@media (max-width: 760px) {
+  .top { flex-wrap: wrap; height: auto; padding-top: 11px; gap: 4px 10px; }
+  .top nav { flex-basis: 100%; order: 3; justify-content: flex-start; gap: clamp(10px, 4vw, 22px); height: 44px; margin: 0; }
+  .top nav a { display: inline-flex; align-items: center; font-size: .86rem; }
+  .find-course { margin-left: auto; }
+  .teacher-note { padding: 15px; grid-template-columns: 1fr; gap: 8px; }
+  .teacher-note p { font-size: .94rem; }
+  .subject-books { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .subject-books .option-title { font-size: clamp(1.3rem, 5.6vw, 1.8rem); }
+}

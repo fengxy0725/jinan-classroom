@@ -1,6 +1,7 @@
-(() => {
+(async () => {
   'use strict';
 
+  await window.classroomCatalogReady;
   const byId = (id) => document.getElementById(id);
   const id = new URLSearchParams(location.search).get('id');
   const lesson = window.lessons.find((entry) => entry.id === id);
@@ -47,6 +48,21 @@
   byId('genre').textContent = lesson.genre;
   byId('type').textContent = lesson.type || '课件改编';
   byId('warmup-text').textContent = lesson.warmup;
+  if (lesson.video && typeof lesson.video.url === 'string') {
+    let url;
+    try { url = new URL(lesson.video.url); } catch { /* A malformed media link must not interrupt the lesson. */ }
+    if (url && url.origin === window.classroomStudioOrigin && !url.username && !url.password) {
+      byId('video-title').textContent = lesson.video.title || lesson.title;
+      const player = byId('lesson-video');
+      player.addEventListener('error', () => { byId('video-error').hidden = false; });
+      player.src = url.href;
+      if (typeof lesson.video.transcript === 'string' && lesson.video.transcript.trim()) {
+        byId('transcript-text').textContent = lesson.video.transcript;
+        byId('transcript-panel').hidden = false;
+      }
+      byId('video-section').hidden = false;
+    }
+  }
   if (lesson.sessions?.length) {
     for (const session of lesson.sessions) {
       const row = node('li');
@@ -177,5 +193,15 @@
   });
   showRecallCard();
 
+  const series = window.classroomSeries.map(key => window.lessons.find(course => course.id === key)).filter(Boolean);
+  const sequence = series.includes(lesson) ? series : window.lessons.filter(course =>
+    course.subject === lesson.subject && course.grade === lesson.grade && course.term === lesson.term && course.unit === lesson.unit);
+  const next = sequence[sequence.indexOf(lesson) + 1];
+  if (next) {
+    const link = byId('next-lesson');
+    link.textContent = '下一节 · ' + next.title + ' →';
+    link.href = './lesson.html?id=' + encodeURIComponent(next.id);
+    link.hidden = false;
+  }
   byId('lesson').hidden = false;
 })();

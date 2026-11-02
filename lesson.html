@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#123e36">
   <title>课堂讲义 · 锦安老师的公开课</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./lesson.css?v=20261101-2">
+  <link rel="stylesheet" href="./lesson.css?v=20261102-1">
   <script>window.lessons = [];</script>
   <script defer src="./lessons/primary-chinese.js"></script>
   <script defer src="./lessons/primary-history.js"></script>
@@ -14,8 +15,9 @@
   <script defer src="./lessons/grade8.js"></script>
   <script defer src="./lessons/grade9.js"></script>
   <script defer src="./lessons/junior-history.js"></script>
-  <script defer src="./lesson.js?v=20261101-2"></script>
-  <script defer src="./classroom-service.js"></script>
+  <script defer src="./catalog.js?v=20261102-1"></script>
+  <script defer src="./lesson.js?v=20261102-1"></script>
+  <script defer src="./classroom-service.js?v=20261102-1"></script>
 </head>
 <body>
   <a class="skip-link" href="#content">跳到讲义正文</a>
@@ -30,6 +32,7 @@
   </header>
   <main class="page" id="content" tabindex="-1">
     <noscript><p>请开启浏览器的 JavaScript 来阅读互动讲义。</p><a href="./index.html#library">返回课程目录</a></noscript>
+    <div id="catalog-status" class="catalog-status"><span id="catalog-message" role="status">正在读取课程书架……</span> <button id="catalog-retry" type="button" hidden>重新读取</button></div>
     <article id="lesson" hidden>
       <header class="cover">
         <div class="cover-line"><span>课堂讲义</span><span lang="en">CLASS NOTES</span></div>
@@ -40,6 +43,12 @@
         </div>
         <div class="cover-foot"><span id="genre"></span><span id="type"></span></div>
       </header>
+      <section id="video-section" class="lesson-video" aria-labelledby="video-title" hidden>
+        <div class="video-heading"><span>课堂视频</span><h2 id="video-title"></h2></div>
+        <video id="lesson-video" controls playsinline preload="metadata" aria-labelledby="video-title"></video>
+        <p id="video-error" role="status" hidden>暂时无法播放这段视频。你可以继续阅读本页讲义。</p>
+        <details id="transcript-panel" hidden><summary>查看视频文字稿</summary><p id="transcript-text"></p></details>
+      </section>
       <div class="spread">
         <nav class="contents" aria-label="本课目录">
           <p class="contents-title">本课目录</p>
@@ -100,6 +109,7 @@
           </section>
           <footer class="lesson-footer">
             <a class="back-to-library" href="./index.html#library" data-return-unit>返回本单元 <span aria-hidden="true">→</span></a>
+            <a class="next-lesson" id="next-lesson" hidden></a>
           </footer>
         </div>
       </div>

@@ -1,8 +1,9 @@
-(() => {
+(async () => {
   'use strict';
   // Record page opens on the published classroom only. In-class answers and
   // drafts stay on the lesson page; transitions within the shelf are not visits.
   if (location.origin !== 'https://fengxy0725.github.io' || !location.pathname.startsWith('/jinan-classroom/')) return;
+  await window.classroomCatalogReady;
   const isLesson = location.pathname.endsWith('/lesson.html');
   const lessonId = new URLSearchParams(location.search).get('id');
   const lesson = isLesson && window.lessons.find(course => course.id === lessonId);

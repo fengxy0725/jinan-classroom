@@ -135,3 +135,16 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.8vw, 3.9rem); line-height: 1.24; let
   .section-head, .reading-block h3 { break-after: avoid; }
   .quiz, .reveal, .reading-block { break-inside: avoid; }
 }
+
+.catalog-status { padding: 2rem 0; color: var(--muted); }
+.catalog-status button { min-height: 44px; padding: .4rem 1rem; background: var(--paper); border: 1px solid var(--ink); border-radius: 4px; }
+.lesson-video { max-width: 790px; margin: 2rem auto 0; }
+.video-heading span { color: var(--clay); font-size: .85rem; }
+.video-heading h2 { margin: .25rem 0 .75rem; font: 700 clamp(1.35rem, 2vw, 1.8rem)/1.55 var(--serif); }
+.lesson-video video { display: block; width: 100%; max-height: 65vh; aspect-ratio: 16 / 9; background: #102a25; border-radius: 5px; object-fit: contain; }
+.lesson-video details { margin-top: .65rem; padding: 0 .85rem; border-left: 3px solid var(--rule); background: #f1f1e7; }
+.lesson-video summary { cursor: pointer; min-height: 44px; padding: .65rem 0; }
+.lesson-video details p { margin: 0; padding: .2rem 0 1rem; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
+.lesson-footer { display: flex; justify-content: space-between; align-items: baseline; gap: .65rem 1.2rem; flex-wrap: wrap; }
+.next-lesson { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; overflow-wrap: anywhere; }
+@media print { .lesson-video video { display: none; } }
