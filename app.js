@@ -11,7 +11,7 @@
   const gradeNames = '一二三四五六七八九';
   const subjects = ['语文', '历史'];
   const preferred = window.classroomSeries.map(id => catalog.find(course => course.id === id)).filter(Boolean);
-  const courses = [...preferred, ...catalog.filter(course => !preferred.includes(course)).sort((a,b) => a.grade - b.grade)];
+  const courses = catalog;
   const covers = {
     'yong-xue':'snow', 'chengtiansi':'moon', 'huxinting-kanxue':'boat', 'guo-lingdingyang':'boat',
     'shan-xing':'snow', 'ti-xi-lin-bi':'boat', 'jianjia':'boat', 'yu-guo-xiao-yuan':'moon'
@@ -25,17 +25,18 @@
   function makeCard(course) {
     const link = node('a','card');
     link.href = './lesson.html?id=' + encodeURIComponent(course.id);
-    link.setAttribute('aria-label', '进入' + gradeNames[course.grade-1] + '年级' + course.subject + '《' + course.title + '》');
+    const section = '第 ' + course.sectionNumber + ' 节';
+    link.setAttribute('aria-label', gradeName(course.grade) + course.subject + '，' + unitName(course) + '，' + section + '《' + course.title + '》');
     const cover = node('div','cover');
     const img = node('img');
     img.src = './assets/covers/' + (Object.hasOwn(covers, course.id) ? covers[course.id] : course.subject === '历史' ? 'history' : 'paper') + '.svg';
     img.alt = '';
     img.loading = 'lazy';
-    cover.append(img, node('span','cover-index','No. ' + String(courses.indexOf(course)+1).padStart(2,'0')));
+    cover.append(img, node('span','cover-index',section));
     const body = node('div','card-body');
     const tags = node('div','tagline');
     tags.append(node('span','subject-tag' + (course.subject === '历史' ? ' history' : ''),course.subject),
-      node('span','',gradeNames[course.grade-1] + '年级 · ' + course.term));
+      node('span','',gradeName(course.grade) + ' · ' + course.term + ' · ' + shortUnit(course.term, unitName(course))));
     const foot = node('div','card-foot');
     const open = node('b','','进入课堂');
     open.append(node('span','','→'));
@@ -47,7 +48,6 @@
   const gradeName = (grade) => gradeNames[grade - 1] + '年级';
   const unitName = (course) => course.unit || '待编目';
   const shortUnit = (term, unit) => unit.startsWith(term + ' · ') ? unit.slice(term.length + 3) : unit;
-  const termOrder = ['上册', '下册', '拓展'];
   const keys = ['subject', 'stage', 'grade', 'term', 'unit', 'q'];
   const inStage = (course, stage) => !stage || (stage === '小学' ? course.grade <= 6 : course.grade >= 7);
 
@@ -150,10 +150,7 @@
       return;
     }
     if (!route.unit) {
-      const terms = [...new Set(gradeCourses.map(c => c.term))].sort((a, b) => {
-        const order = term => termOrder.includes(term) ? termOrder.indexOf(term) : termOrder.length;
-        return order(a) - order(b);
-      });
+      const terms = new Set(gradeCourses.map(c => c.term));
       heading('选择单元', gradeName(route.grade) + ' · ' + route.subject);
       for (const term of terms) {
         const inTerm = gradeCourses.filter(course => course.term === term);
@@ -175,7 +172,7 @@
 
   // Index each lesson's content once. A search always covers both subjects.
   const searchable = courses.map(course => {
-    const text = [course.title, course.subject, gradeName(course.grade), course.grade + '年级',
+    const text = [course.title, course.subject, gradeName(course.grade), course.grade + '年级', '第' + course.sectionNumber + '节',
       course.term, unitName(course), ...(course.sessions || []).flatMap(item => [item.label,item.text]), course.genre, course.type || '课件改编', course.summary, course.warmup,
       course.video?.title, course.video?.transcript,
       ...course.focus.flatMap(item => [item.label, item.text]), course.activity.prompt,

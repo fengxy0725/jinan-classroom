@@ -41,6 +41,7 @@
     if (byId('metadata').childElementCount) byId('metadata').append(' / ');
     byId('metadata').append(link);
   }
+  byId('metadata').append(' / 第 ' + lesson.sectionNumber + ' 节');
   for (const link of document.querySelectorAll('[data-return-unit]')) {
     link.href = './index.html#library?' + path.toString();
   }
@@ -225,14 +226,22 @@
   });
   showRecallCard();
 
-  const series = window.classroomSeries.map(key => catalog.find(course => course.id === key)).filter(Boolean);
-  const sequence = series.includes(lesson) ? series : catalog.filter(course =>
-    course.subject === lesson.subject && course.grade === lesson.grade && course.term === lesson.term && course.unit === lesson.unit);
+  const sequence = catalog.filter(course => course.subject === lesson.subject && course.grade === lesson.grade &&
+    course.term === lesson.term && (course.unit || '待编目') === (lesson.unit || '待编目'));
   const next = sequence[sequence.indexOf(lesson) + 1];
   if (next) {
     const link = byId('next-lesson');
-    link.textContent = '下一节 · ' + next.title + ' →';
+    link.textContent = '本单元第 ' + next.sectionNumber + ' 节 · ' + next.title + ' →';
     link.href = './lesson.html?id=' + encodeURIComponent(next.id);
+    link.hidden = false;
+  }
+  const series = window.classroomSeries.map(key => catalog.find(course => course.id === key)).filter(Boolean);
+  const seriesIndex = series.indexOf(lesson);
+  const featuredNext = seriesIndex >= 0 ? series[seriesIndex + 1] : null;
+  if (featuredNext && featuredNext !== next) {
+    const link = byId('series-next');
+    link.textContent = '本期选课下一篇 · ' + featuredNext.title + ' →';
+    link.href = './lesson.html?id=' + encodeURIComponent(featuredNext.id);
     link.hidden = false;
   }
   byId('lesson').hidden = false;
