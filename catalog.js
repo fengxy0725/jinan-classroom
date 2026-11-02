@@ -29,6 +29,62 @@
         typeof item.explanation === 'string');
   }
 
+  const terms = ['上册', '下册', '拓展'];
+  const subjects = ['语文', '历史'];
+  const numeral = /(?:^|[·\s])第?\s*([\d零〇一二两三四五六七八九十百]+)\s*单元/u;
+  function unitNumber(unit) {
+    const match = numeral.exec(unit.normalize('NFKC'));
+    if (!match) return Infinity;
+    if (/^\d+$/.test(match[1])) return Number(match[1]);
+    let total = 0, digit = 0;
+    for (const char of match[1].replaceAll('两', '二').replaceAll('〇', '零')) {
+      if (char === '十' || char === '百') {
+        total += (digit || 1) * (char === '十' ? 10 : 100);
+        digit = 0;
+      } else {
+        digit = '零一二三四五六七八九'.indexOf(char);
+      }
+    }
+    return total + digit;
+  }
+
+  function termIndex(term) {
+    const index = terms.indexOf(term);
+    return index < 0 ? terms.length : index;
+  }
+  function sectionOrder(course) {
+    return Number.isSafeInteger(course.lessonOrder) && course.lessonOrder > 0 ? course.lessonOrder : Infinity;
+  }
+  function orderCatalog(rows) {
+    const groups = new Map();
+    for (const course of rows) {
+      const unit = course.unit || '待编目';
+      const key = JSON.stringify([course.grade, course.subject, course.term, unit]);
+      if (!groups.has(key)) {
+        groups.set(key, {grade: course.grade, subject: course.subject, term: course.term,
+          unitNumber: unitNumber(unit), lessons: []});
+      }
+      groups.get(key).lessons.push(course);
+    }
+    // Stable ties retain the teacher's file order for unnumbered topic groups.
+    const orderedGroups = [...groups.values()].sort((a, b) => a.grade - b.grade ||
+      subjects.indexOf(a.subject) - subjects.indexOf(b.subject) ||
+      termIndex(a.term) - termIndex(b.term) || a.term.localeCompare(b.term, 'zh-CN') ||
+      (a.unitNumber === b.unitNumber ? 0 : a.unitNumber - b.unitNumber));
+    return orderedGroups.flatMap(group => {
+      group.lessons.sort((a, b) => {
+        const left = sectionOrder(a), right = sectionOrder(b);
+        return left === right ? 0 : left - right;
+      });
+      let previous = 0;
+      return group.lessons.map(course => {
+        const order = sectionOrder(course);
+        previous = Math.max(previous + 1, Number.isFinite(order) ? order : 0);
+        return {...course, sectionNumber: previous};
+      });
+    });
+  }
+
   if (location.protocol === 'file:') {
     // Browsers restrict JSON requests on file://. Link to the same lesson, without an obsolete local copy.
     const published = new URL('https://fengxy0725.github.io/jinan-classroom/');
@@ -78,7 +134,7 @@
         if (new Set(lessons.map(course => course.id)).size !== lessons.length) throw new Error();
         status.hidden = true;
         retry.removeEventListener('click', load);
-        resolve(lessons);
+        resolve(orderCatalog(lessons));
       } catch {
         controller.abort();
         message.textContent = (failedGroup ? '暂时无法读取“' + failedGroup + '”的课程。' : '暂时无法读取完整的课程书架。') + '请检查网络后重试；如果老师刚刚提交了修改，请稍后再试。';
