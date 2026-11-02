@@ -6,11 +6,12 @@
     $('library').scrollIntoView();
     if (!$('catalog-content').hidden) $('query').focus({preventScroll: true});
   });
-  await window.classroomCatalogReady;
+  const catalog = await window.classroomCatalogReady;
+  if (!catalog) return;
   const gradeNames = '一二三四五六七八九';
   const subjects = ['语文', '历史'];
-  const preferred = window.classroomSeries.map(id => window.lessons.find(course => course.id === id)).filter(Boolean);
-  const courses = [...preferred, ...window.lessons.filter(course => !preferred.includes(course)).sort((a,b) => a.grade - b.grade)];
+  const preferred = window.classroomSeries.map(id => catalog.find(course => course.id === id)).filter(Boolean);
+  const courses = [...preferred, ...catalog.filter(course => !preferred.includes(course)).sort((a,b) => a.grade - b.grade)];
   const covers = {
     'yong-xue':'snow', 'chengtiansi':'moon', 'huxinting-kanxue':'boat', 'guo-lingdingyang':'boat',
     'shan-xing':'snow', 'ti-xi-lin-bi':'boat', 'jianjia':'boat', 'yu-guo-xiao-yuan':'moon'
@@ -50,7 +51,7 @@
   const keys = ['subject', 'stage', 'grade', 'term', 'unit', 'q'];
   const inStage = (course, stage) => !stage || (stage === '小学' ? course.grade <= 6 : course.grade >= 7);
 
-  // Fragment routes work for GitHub project pages and double-clicked local files.
+  // Fragment routes also work under a GitHub project subdirectory.
   function routeFor(parts) {
     const params = new URLSearchParams();
     for (const key of keys) {
@@ -115,6 +116,12 @@
     trail(path);
     if (!route.subject) {
       heading('选择学科', '共 ' + courses.length + ' 节课');
+      if (!courses.length) {
+        const empty = node('div', 'empty');
+        empty.append(node('h4', '', '书架上暂时还没有已发布的课'));
+        output.append(empty);
+        return;
+      }
       const grid = node('div', 'subject-books');
       subjects.forEach((subject, index) => {
         const number = courses.filter(course => course.subject === subject).length;

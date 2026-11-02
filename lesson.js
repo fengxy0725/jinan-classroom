@@ -1,10 +1,11 @@
 (async () => {
   'use strict';
 
-  await window.classroomCatalogReady;
+  const catalog = await window.classroomCatalogReady;
+  if (!catalog) return;
   const byId = (id) => document.getElementById(id);
   const id = new URLSearchParams(location.search).get('id');
-  const lesson = window.lessons.find((entry) => entry.id === id);
+  const lesson = catalog.find((entry) => entry.id === id);
   if (!lesson) {
     byId('not-found').hidden = false;
     document.title = '暂未找到这节课 · 锦安老师的公开课';
@@ -48,16 +49,47 @@
   byId('genre').textContent = lesson.genre;
   byId('type').textContent = lesson.type || '课件改编';
   byId('warmup-text').textContent = lesson.warmup;
-  if (lesson.video && typeof lesson.video.url === 'string') {
-    let url;
-    try { url = new URL(lesson.video.url); } catch { /* A malformed media link must not interrupt the lesson. */ }
-    if (url && url.origin === window.classroomStudioOrigin && !url.username && !url.password) {
+  function videoLink(value) {
+    if (typeof value !== 'string') return null;
+    const raw = value.trim();
+    if (!raw || /[\u0000-\u001f\u007f\\]/.test(raw) || raw.startsWith('//')) return null;
+    try {
+      const url = new URL(raw, location.href);
+      if (url.username || url.password || url.hostname.startsWith('jinan-classroom-studio.')) return null;
+      if (/^https:\/\//i.test(raw)) return url.protocol === 'https:' ? url : null;
+      // Keep repository videos inside the published site's videos/ directory, including local HTTP previews.
+      const videoDirectory = new URL('./videos/', location.href);
+      if (/^(?:\.\/)?videos\//.test(raw) && url.origin === location.origin &&
+          url.pathname.startsWith(videoDirectory.pathname) && url.pathname.length > videoDirectory.pathname.length &&
+          !/%(?:2f|5c)/i.test(url.pathname)) return url;
+    } catch { /* Invalid lesson data must not prevent reading or practice. */ }
+    return null;
+  }
+  if (lesson.video && typeof lesson.video === 'object') {
+    const url = videoLink(lesson.video.url);
+    const transcript = typeof lesson.video.transcript === 'string' ? lesson.video.transcript.trim() : '';
+    if (url || transcript) {
       byId('video-title').textContent = lesson.video.title || lesson.title;
       const player = byId('lesson-video');
-      player.addEventListener('error', () => { byId('video-error').hidden = false; });
-      player.src = url.href;
-      if (typeof lesson.video.transcript === 'string' && lesson.video.transcript.trim()) {
-        byId('transcript-text').textContent = lesson.video.transcript;
+      if (url) {
+        const retryVideo = byId('video-retry');
+        function showVideoError() {
+          byId('video-error').hidden = false;
+          retryVideo.hidden = false;
+        }
+        player.addEventListener('error', showVideoError);
+        player.addEventListener('playing', () => { byId('video-error').hidden = true; });
+        retryVideo.addEventListener('click', () => {
+          player.load();
+          player.play().catch(showVideoError);
+        });
+        player.src = url.href;
+      } else {
+        player.hidden = true;
+        byId('video-error').hidden = false;
+      }
+      if (transcript) {
+        byId('transcript-text').textContent = transcript;
         byId('transcript-panel').hidden = false;
       }
       byId('video-section').hidden = false;
@@ -193,8 +225,8 @@
   });
   showRecallCard();
 
-  const series = window.classroomSeries.map(key => window.lessons.find(course => course.id === key)).filter(Boolean);
-  const sequence = series.includes(lesson) ? series : window.lessons.filter(course =>
+  const series = window.classroomSeries.map(key => catalog.find(course => course.id === key)).filter(Boolean);
+  const sequence = series.includes(lesson) ? series : catalog.filter(course =>
     course.subject === lesson.subject && course.grade === lesson.grade && course.term === lesson.term && course.unit === lesson.unit);
   const next = sequence[sequence.indexOf(lesson) + 1];
   if (next) {
